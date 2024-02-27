@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# custom
+todo.txt
+src/app/components/preview_urls.json
+src/app/admin
+src/app/api/searchMusicAdmin
