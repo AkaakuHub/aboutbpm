@@ -198,7 +198,7 @@ function App() {
           )}
         </Container>
       </div>
-    <Suspense/>
+    </Suspense>
   );
 }
 
