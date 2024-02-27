@@ -15,7 +15,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { X } from "react-bootstrap-icons"
 
-const Page = () => {
+function App() {
   const mainTextFromQuery = useSearchParams().get("mainText") || "";
   const kindFromQuery = useSearchParams().get("kind") || "";
 
@@ -199,4 +199,4 @@ const Page = () => {
   );
 }
 
-export default Page;
+export default App;
