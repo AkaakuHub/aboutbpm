@@ -94,7 +94,6 @@ function App() {
   };
 
   return (
-    <Suspense>
       <div style={{ paddingTop: "5em" }}
       >
         <Navbar expand="lg" className="bg-body-tertiary" fixed="top" bg="light" variant="light" expanded={expanded} onToggle={setExpanded}
@@ -198,8 +197,15 @@ function App() {
           )}
         </Container>
       </div>
-    </Suspense>
   );
 }
 
-export default App;
+function AppWrapper() {
+  return (
+  <Suspense>
+    <App />
+  </Suspense>
+  )
+}
+
+export default AppWrapper;
