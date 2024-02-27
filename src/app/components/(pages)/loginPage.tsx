@@ -18,12 +18,9 @@ import MakeOptionsCard from "@/app/components/(parts)/MakeOptionsCard";
 import { SP } from "next/dist/shared/lib/utils";
 
 const Page = () => {
+  const [initialWindowHeight, setInitialWindowHeight] = useState<number>(0);
   // const [query, setQuery] = useState("");
-  const [isSearching, setIsSearching] = useState<boolean>(false);
   const [searchResults, setSearchResults] = useState<{ id: string, songData: SongData }[] | null>(null);
-  const [errorMessage, setErrorMessage] = useState<string>("");
-  const [isDoingClientCredentials, setIsDoingClientCredentials] = useState<boolean>(false);
-
   // const [makeCardResults, setMakeCardResults] = useState<ReactElement | null>(null);
 
   const [isOptionTabOpen, setIsOptionTabOpen] = useState<boolean>(false);
@@ -37,12 +34,10 @@ const Page = () => {
 
   const searchMusicSimpleAPI = async (query: string) => {
     // console.log(query)
-    setIsSearching(true);
     const res = await fetch_searchMusicSimple(query);
     if (judgeStatus(res.status)) {
       const data = await res.json();
       setSearchResults(data);
-      setIsSearching(false);
     }
   };
 
@@ -56,9 +51,8 @@ const Page = () => {
       }
       catch (error) {
         console.error('Error:', error);
-        setErrorMessage("Internal server error");
+        alert("サーバーエラーです。しばらくしてから再度お試しください。");
       }
-      setIsDoingClientCredentials(false);
       // reload
       window
         .location
@@ -70,6 +64,13 @@ const Page = () => {
     searchMusicSimpleAPI("");
   }
     , []);
+
+  useEffect(() => {
+    setInitialWindowHeight(window.innerHeight);
+    window.addEventListener('resize', () => {
+      setInitialWindowHeight(window.innerHeight);
+    });
+  }, []);
 
   return (
     <div>
@@ -101,8 +102,7 @@ const Page = () => {
         <br />
         {searchResults ? (
           <div>
-            {searchResults.length}件の検索結果
-            <MakeCard data={searchResults} option={sortOptions} />
+            <MakeCard data={searchResults} option={sortOptions} windowHeight={initialWindowHeight} />
           </div>
         ) :
           (

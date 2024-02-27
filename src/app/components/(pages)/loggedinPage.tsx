@@ -17,6 +17,7 @@ import MakeOptionsCard from "@/app/components/(parts)/MakeOptionsCard";
 
 // tokenを受け取る
 const Page = (props: { token: string }) => {
+  const [initialWindowHeight, setInitialWindowHeight] = useState<number>(0);
   // const [query, setQuery] = useState("");
   const [isSearching, setIsSearching] = useState<boolean>(false);
   const [searchResults, setSearchResults] = useState<{ id: string, songData: SongData }[] | null>(null);
@@ -56,6 +57,13 @@ const Page = (props: { token: string }) => {
     setSearchResults([]);
   }
     , []);
+
+  useEffect(() => {
+    setInitialWindowHeight(window.innerHeight);
+    window.addEventListener('resize', () => {
+      setInitialWindowHeight(window.innerHeight);
+    });
+  }, []);
 
   return (
     <div>
@@ -116,8 +124,7 @@ const Page = (props: { token: string }) => {
         <br />
         {searchResults ? (
           <div>
-            {searchResults.length}件の検索結果
-            <MakeCard data={searchResults} option={sortOptions} />
+            <MakeCard data={searchResults} option={sortOptions} windowHeight={initialWindowHeight} />
           </div>
         ) :
           (

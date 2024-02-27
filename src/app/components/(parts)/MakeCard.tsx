@@ -43,28 +43,41 @@ const CardComponent: React.FC<CardProps> = ({ element }) => {
   return (
     <Card
       key={id}
-      style={{ width: "100%" }}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <Card.Body>
+      <Card.Body
+        style={{ padding: "0.4rem" }}
+      >
         <Card.Text style={{
           display: 'flex', justifyContent: 'space-between', textAlign: 'center', alignItems: 'center'
         }}>
-          <span className='col-1.3'>{songData.bpm}</span>
-          <span className='col-1'>
+          <span className='col-1.5'>{songData.bpm}</span>
+          <span className='col-0.5'>
             {songData.is_checked ? <CheckCircle color='green'
-            /> : null}
+            /> : <span> 　</span>}
           </span>
-          <span className='col-7' style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{songData.title}</span>
+          <span className='col-7'
+          >
+            <span className='row'>
+              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
+                {songData.title}
+              </span>
+            </span>
+            <span className='row'>
+              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
+                {songData.artist}
+              </span>
+            </span>
+          </span>
           {
             isHover ? (
-              <span className='col-1'
+              <span className='col-2'
                 onClick={() => ContactMessageOnClick(songData.title, songData.artist, songData.bpm, songData.is_checked)}
                 style={{ cursor: 'pointer' }}
               >
                 <OverlayTrigger
-                  placement="right"
+                  placement="left"
                   delay={{ show: 0, hide: 5000 }}
                   overlay={(props: any) => renderTooltip(props, songData)}
                 >
@@ -72,9 +85,8 @@ const CardComponent: React.FC<CardProps> = ({ element }) => {
                   />
                 </OverlayTrigger>
               </span>
-            ) : <span className='col-1'></span>
+            ) : <span className='col-2'></span>
           }
-          <span className='col' style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{songData.artist}</span>
         </Card.Text>
       </Card.Body>
     </Card>
@@ -82,7 +94,7 @@ const CardComponent: React.FC<CardProps> = ({ element }) => {
 
 };
 
-const MakeCard = (props: { data: { id: string, songData: SongData }[], option: FilterOptions }) => {
+const MakeCard = (props: { data: { id: string, songData: SongData }[], option: FilterOptions, windowHeight: number }) => {
   let data = props.data;
   const option = props.option;
   if (data.length === 0) {
@@ -116,7 +128,7 @@ const MakeCard = (props: { data: { id: string, songData: SongData }[], option: F
   }
 
   const itemCount = data.length;
-  const itemSize = 70;
+  const itemSize = 70; // 高さ
   const Item = ({ index, style }: { index: number, style: React.CSSProperties }) => {
     const element = data[index];
     return (
@@ -125,17 +137,20 @@ const MakeCard = (props: { data: { id: string, songData: SongData }[], option: F
       </div>
     );
   };
-  const itemNumInWindow = Math.floor(window.innerHeight / itemSize - 2);
+  const itemNumInWindow = Math.floor(props.windowHeight / itemSize - 2);
   return (
-    <List
-      height={itemSize * itemNumInWindow}
-      itemCount={itemCount}
-      itemSize={itemSize}
-      width='100%'
-      className='VirtualizedList'
-    >
-      {Item}
-    </List>
+    <span>
+      {itemCount}件見つかりました
+      <List
+        height={itemSize * itemNumInWindow}
+        itemCount={itemCount}
+        itemSize={itemSize}
+        width='100%'
+        className='VirtualizedList'
+      >
+        {Item}
+      </List>
+    </span>
   );
 };
 
