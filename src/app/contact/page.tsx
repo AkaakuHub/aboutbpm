@@ -21,7 +21,7 @@ function App() {
   const kindFromQuery = useSearchParams().get("kind") || "";
 
   const [mainText, setMainText] = useState("");
-  const [optionValue, setOptionValue] = useState("2");
+  const [optionValue, setOptionValue] = useState("３");
   const [isValidate, setIsValidate] = useState(false);
 
   const [isSending, setIsSending] = useState(false);
@@ -76,14 +76,22 @@ function App() {
 
   // mainTextが300文字以上だったら、送信ボタンを無効にする, 300文字に強制
   useEffect(() => {
+    console.log(mainText.length, "です")
     if (mainText.length > 300) {
-      setMainText(mainText.slice(0, 301));
+      setMainText(mainText.slice(0, 300));
       setAlertMessagesFunc("300文字を超えています。")
       setIsValidate(false);
     } else {
       setIsValidate(!/^\s*$/.test(mainText));
     }
   }, [mainText]);
+
+  // optionValueが2なら、spotifyについての通知を表示
+  useEffect(() => {
+    if (optionValue === "2") {
+      setAlertMessagesFunc("Spotifyのプレイリストによる追加にも対応しています。");
+    }
+  }, [optionValue]);
 
   const [expanded, setExpanded] = useState(false);
 
@@ -139,6 +147,7 @@ function App() {
               <option disabled >選択してください</option>
               <option value="1">情報の修正</option>
               <option value="2">曲の追加</option>
+              <option value="3">その他</option>
             </Form.Control>
           </Form.Group>
           <Form.Group className="mb-3" style={{ maxWidth: "500px" }}

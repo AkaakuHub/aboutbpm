@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Login from "./components/(pages)/loginPage"
 import LoggedIn from "./components/(pages)/loggedinPage"
 
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,6 +12,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { CheckCircle } from 'react-bootstrap-icons';
 import { Envelope } from 'react-bootstrap-icons';
+import { X } from "react-bootstrap-icons"
 
 import getTokenFromUrl from './libs/GetTokenFromURL';
 
@@ -46,6 +48,7 @@ function App() {
     marginTop: "-2.2em",
   };
 
+  const [isNotificationClosed, setIsNotificationClosed] = useState<boolean>(false);
 
   return (
     <>
@@ -85,9 +88,10 @@ function App() {
           <div style={{ paddingTop: "5em" }}
           >
             <Container>
-              注意： BPMはlibrosaによる自動推定のため、2,3ほどずれていたり、2倍になっていたりすることがあります。
+              注意： BPMはlibrosaによる自動推定のため、2,3ほどずれていたり、2倍になっていたりすることがあります。そのため、BPMが間違っている場合は遠慮なくお問い合わせください。
               <br />
-              BPMが間違っている場合は遠慮なくお問い合わせください。
+              <br />
+              また、曲の追加のリクエストも受け付けています。お問い合わせフォームからお知らせください。
               <br />
               本サイトはあくまで目安としてお使いください。
               <br />
@@ -96,6 +100,27 @@ function App() {
               <br />
               <Envelope />をクリックすると、その情報に対してお問い合わせができます。
               <br />
+              <br />
+              {/** ここにお知らせなど */}
+              {!isNotificationClosed && (
+                <div className="alert alert-dismissible alert-info row align-items-center">
+                  <span className='col-2'
+                  ><strong>お知らせ</strong>
+                  </span>
+                  <span className='col'
+                  >近いうちに、データベースとの照合を行い、BPMの精度を向上させる予定です。しばらくお待ちください。
+                  </span>
+                  <span className='col-0.3'
+                  >
+                    <Button type='button' className='ml-2 mb-1 mt-2 close' data-dismiss='toast' variant='link'
+                      onClick={() => {
+                        setIsNotificationClosed(true);
+                      }}>
+                      <span><X /> </span>
+                    </Button>
+                  </span>
+                </div>
+              )}
               <br />
               {token ? (
                 <LoggedIn token={token} />
