@@ -63,7 +63,7 @@ function App() {
             }}
           >
             <Container>
-              <Navbar.Brand href="">だいたいBPM</Navbar.Brand>
+              <Navbar.Brand href=""><h3>だいたいBPM</h3></Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto" onClick={handleNavClose}
@@ -88,6 +88,7 @@ function App() {
           <div style={{ paddingTop: "5em" }}
           >
             <Container>
+              <br />
               注意： BPMはlibrosaによる自動推定のため、2,3ほどずれていたり、2倍になっていたりすることがあります。そのため、BPMが間違っている場合は遠慮なくお問い合わせください。
               <br />
               <br />
