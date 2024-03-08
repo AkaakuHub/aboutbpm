@@ -109,7 +109,7 @@ function App() {
                   ><strong>お知らせ</strong>
                   </span>
                   <span className='col'
-                  >近いうちに、データベースとの照合を行い、BPMの精度を向上させる予定です。しばらくお待ちください。
+                  >現在、データベースとの照合を順次行い、BPMの精度を向上させています。もうしばらくお待ちください。
                   </span>
                   <span className='col-0.3'
                   >

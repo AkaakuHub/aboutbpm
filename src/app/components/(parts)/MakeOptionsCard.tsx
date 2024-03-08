@@ -61,8 +61,8 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                   // e.target.value = "1";
                   setSortOptionsErrorMessage("1以上の開始値を入力してください。");
                 } else if (e.target.value === "") {
-                  // e.target.value = "1";
-                  setSortOptionsErrorMessage("有効な開始値を入力してください。");
+                  e.target.value = "1";
+                  // setSortOptionsErrorMessage("有効な開始値を入力してください。");
                 } else if (parseInt(e.target.value) > sortOptions.bpmRangeEnd) {
                   // e.target.value = sortOptions.bpmRangeEnd.toString();
                   setSortOptionsErrorMessage("終了値より小さい開始値を入力してください。");
@@ -71,7 +71,7 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                   setSortOptions({ ...sortOptions, bpmRangeStart: parseInt(e.target.value) });
                 }
               }}
-              // value={sortOptionsErrorMessage !== "" && sortOptions.bpmRangeStart.toString()}
+              // value={sortOptions.bpmRangeStart.toString()}
               // disabled={isSearching}
               />
               <Form.Control type="number" placeholder="終了値(1000以下)" onChange={e => {
@@ -80,8 +80,8 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                   // e.target.value = "1000";
                   setSortOptionsErrorMessage("1000以下の終了値を入力してください。");
                 } else if (e.target.value === "") {
-                  // e.target.value = "300";
-                  setSortOptionsErrorMessage("有効な終了値を入力してください。");
+                  e.target.value = "300";
+                  // setSortOptionsErrorMessage("有効な終了値を入力してください。");
                 } else if (parseInt(e.target.value) < sortOptions.bpmRangeStart) {
                   // e.target.value = sortOptions.bpmRangeStart.toString();
                   setSortOptionsErrorMessage("開始値より大きい終了値を入力してください。");
