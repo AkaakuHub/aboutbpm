@@ -41,3 +41,4 @@ src/app/components/preview_urls.json
 src/app/admin
 src/app/api/searchMusicAdmin
 src/app/api/modifyMusicAdmin
+src/app/api/getBPMAdmin
