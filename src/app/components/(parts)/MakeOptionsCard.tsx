@@ -65,7 +65,7 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                   // setSortOptionsErrorMessage("有効な開始値を入力してください。");
                 } else if (parseInt(e.target.value) > sortOptions.bpmRangeEnd) {
                   // e.target.value = sortOptions.bpmRangeEnd.toString();
-                  setSortOptionsErrorMessage("終了値より小さい開始値を入力してください。");
+                  setSortOptionsErrorMessage("終了値以下の開始値を入力してください。");
                 } else {
                   setSortOptionsErrorMessage("");
                   setSortOptions({ ...sortOptions, bpmRangeStart: parseInt(e.target.value) });
@@ -84,7 +84,7 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                   // setSortOptionsErrorMessage("有効な終了値を入力してください。");
                 } else if (parseInt(e.target.value) < sortOptions.bpmRangeStart) {
                   // e.target.value = sortOptions.bpmRangeStart.toString();
-                  setSortOptionsErrorMessage("開始値より大きい終了値を入力してください。");
+                  setSortOptionsErrorMessage("開始値以上の終了値を入力してください。");
                 } else {
                   setSortOptionsErrorMessage("");
                   setSortOptions({ ...sortOptions, bpmRangeEnd: parseInt(e.target.value) });
@@ -94,7 +94,7 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
               // disabled={isSearching}
               />
             </Form.Group>
-            <Form.Group className="mb-3" style={{ maxWidth: "300px" }}
+            <Form.Group className="mb-3"
             >
               <Form.Label>ミュートワード</Form.Label>
               <Form.Control type="text" placeholder="スペース区切りで入力" onChange={e => {
@@ -108,6 +108,20 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
                 value={sortOptions.muteWords.join(" ")}
               // disabled={isSearching}
               />
+            </Form.Group>
+            <Form.Group className="mb-3" style={{ maxWidth: "500px" }}
+            >
+              <Form.Label>同じBPM内でs曲名順にソートする<br />(曲数が多い場合は処理に時間がかかることがあります)</Form.Label>
+              <Form.Control as="select" onChange={e => {
+                setSortOptions({ ...sortOptions, isSortByTitleInBPM: e.target.value === "true" });
+              }
+              }
+                value={sortOptions.isSortByTitleInBPM.toString()}
+              // disabled={isSearching}
+              >
+                <option value="false">しない</option>
+                <option value="true">する</option>
+              </Form.Control>
             </Form.Group>
             {sortOptionsErrorMessage && <span style={{ color: "red" }}>{sortOptionsErrorMessage}</span>}
           </Form>

@@ -142,14 +142,74 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
     })
   }
 
-  if (option.order === "asc") {
-    // data.sort((a, b) => a.songData.bpm - b.songData.bpm);
-    data.included.sort((a, b) => a.songData.bpm - b.songData.bpm);
-    data.notIncluded.sort((a, b) => a.songData.bpm - b.songData.bpm);
-  } else if (option.order === "desc") {
-    // data.sort((a, b) => b.songData.bpm - a.songData.bpm);
-    data.included.sort((a, b) => b.songData.bpm - a.songData.bpm);
-    data.notIncluded.sort((a, b) => b.songData.bpm - a.songData.bpm);
+  if (option.isSortByTitleInBPM) {
+    // 曲名ソートもわすれずに同時にbpmごとに行って
+    if (option.order === "asc") {
+      data = {
+        included: data.included.sort((a, b) => {
+          if (a.songData.bpm === b.songData.bpm) {
+            if (a.songData.title < b.songData.title) {
+              return -1;
+            }
+            if (a.songData.title > b.songData.title) {
+              return 1;
+            }
+            return 0;
+          }
+          return a.songData.bpm - b.songData.bpm;
+        }),
+        notIncluded: data.notIncluded.sort((a, b) => {
+          if (a.songData.bpm === b.songData.bpm) {
+            if (a.songData.title < b.songData.title) {
+              return -1;
+            }
+            if (a.songData.title > b.songData.title) {
+              return 1;
+            }
+            return 0;
+          }
+          return a.songData.bpm - b.songData.bpm;
+        })
+      }
+    } else if (option.order === "desc") {
+      data = {
+        included: data.included.sort((a, b) => {
+          if (a.songData.bpm === b.songData.bpm) {
+            if (a.songData.title < b.songData.title) {
+              return -1;
+            }
+            if (a.songData.title > b.songData.title) {
+              return 1;
+            }
+            return 0;
+          }
+          return b.songData.bpm - a.songData.bpm;
+        }),
+        notIncluded: data.notIncluded.sort((a, b) => {
+          if (a.songData.bpm === b.songData.bpm) {
+            if (a.songData.title < b.songData.title) {
+              return -1;
+            }
+            if (a.songData.title > b.songData.title) {
+              return 1;
+            }
+            return 0;
+          }
+          return b.songData.bpm - a.songData.bpm;
+        })
+      }
+    }
+  } else {
+    // bpmの昇順または降順でソート, 曲名は関係ない
+    if (option.order === "asc") {
+      // data.sort((a, b) => a.songData.bpm - b.songData.bpm);
+      data.included.sort((a, b) => a.songData.bpm - b.songData.bpm);
+      data.notIncluded.sort((a, b) => a.songData.bpm - b.songData.bpm);
+    } else if (option.order === "desc") {
+      // data.sort((a, b) => b.songData.bpm - a.songData.bpm);
+      data.included.sort((a, b) => b.songData.bpm - a.songData.bpm);
+      data.notIncluded.sort((a, b) => b.songData.bpm - a.songData.bpm);
+    }
   }
 
   // option.isSpotifyPlaylistがtrueの場合、入ってる/ない2つに分ける

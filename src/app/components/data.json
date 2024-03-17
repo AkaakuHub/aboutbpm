@@ -21200,7 +21200,7 @@
   "7qtlUbOLZnCJln42ry66e2": {
     "title": "青空Jumping Heart - 渡辺 曜 Solo Ver.",
     "artist": "渡辺 曜 (CV.斉藤朱夏) from Aqours",
-    "bpm": 100,
+    "bpm": 200,
     "is_checked": true
   },
   "175Bd7dqYCbgA5Ht5tLskA": {
@@ -87975,6 +87975,12 @@
     "title": "ハカナイトメア - GameApp「SHOW BY ROCK!! Fes A Live」",
     "artist": "BUD VIRGIN LOGIC",
     "bpm": 178,
+    "is_checked": true
+  },
+  "3i0v9YmVtjosbiyAw12qKQ": {
+    "title": "青空Jumping Heart - 高海千歌 Solo Ver.",
+    "artist": "高海千歌 (CV.伊波杏樹) from Aqours",
+    "bpm": 200,
     "is_checked": true
   }
 }

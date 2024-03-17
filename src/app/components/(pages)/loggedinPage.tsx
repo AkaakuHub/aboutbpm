@@ -30,6 +30,7 @@ const Page = (props: { token: string }) => {
     bpmRangeStart: 1,
     bpmRangeEnd: 300,
     muteWords: [],
+    isSortByTitleInBPM: false
   });
   const [sortOptionsErrorMessage, setSortOptionsErrorMessage] = useState<string>("");
 

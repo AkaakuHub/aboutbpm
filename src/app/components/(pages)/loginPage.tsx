@@ -28,7 +28,8 @@ const Page = () => {
     order: "desc",
     bpmRangeStart: 1,
     bpmRangeEnd: 300,
-    muteWords: []
+    muteWords: [],
+    isSortByTitleInBPM: false
   });
   const [sortOptionsErrorMessage, setSortOptionsErrorMessage] = useState<string>("");
 

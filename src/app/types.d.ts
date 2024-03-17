@@ -10,6 +10,7 @@ export interface FilterOptions {
   bpmRangeStart: number;
   bpmRangeEnd: number;
   muteWords: string[];
+  isSortByTitleInBPM: boolean;
 }
 
 export interface SearchResult {
