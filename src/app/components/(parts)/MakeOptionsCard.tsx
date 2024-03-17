@@ -111,7 +111,7 @@ const MakeOptionsCard = ({ sortOptions, setSortOptions, isOptionTabOpen, setIsOp
             </Form.Group>
             <Form.Group className="mb-3" style={{ maxWidth: "500px" }}
             >
-              <Form.Label>同じBPM内でs曲名順にソートする<br />(曲数が多い場合は処理に時間がかかることがあります)</Form.Label>
+              <Form.Label>同じBPM内で曲名順にソートする<br />(曲数が多い場合は処理に時間がかかることがあります)</Form.Label>
               <Form.Control as="select" onChange={e => {
                 setSortOptions({ ...sortOptions, isSortByTitleInBPM: e.target.value === "true" });
               }
