@@ -87982,5 +87982,1919 @@
     "artist": "高海千歌 (CV.伊波杏樹) from Aqours",
     "bpm": 200,
     "is_checked": true
+  },
+  "4lFGExZoEArB7jzulnWtfl": {
+    "title": "Daydream café",
+    "artist": "Petit Rabbit's",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "5hDNTMOQ5L4vZMQmhL2WO0": {
+    "title": "日常デコレーション",
+    "artist": "Petit Rabbit's",
+    "bpm": 125,
+    "is_checked": true
+  },
+  "0C9sbwpXHi1HuVXAVUUtXR": {
+    "title": "ぽっぴんジャンプ♪",
+    "artist": "チマメ隊",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "7b13zf0cQHnqPxqCXd9wKK": {
+    "title": "ぽっぴんジャンプ♪～チノVer.～",
+    "artist": "チマメ隊",
+    "bpm": 151,
+    "is_checked": true
+  },
+  "4XvLyvrPFEGj1ArDikZtOH": {
+    "title": "ぽっぴんジャンプ♪～マヤVer.～",
+    "artist": "チマメ隊",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "0A9gaOJBvH1SeHsck2VBDf": {
+    "title": "ぽっぴんジャンプ♪～メグVer.～",
+    "artist": "チマメ隊",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "7FsTeq9XXGGzl2PTZjQRCE": {
+    "title": "全天候型いらっしゃいませ",
+    "artist": "ココア(佐倉綾音)&チノ(水瀬いのり)",
+    "bpm": 143,
+    "is_checked": true
+  },
+  "4piPxzglsMXy4uFsIN7lyW": {
+    "title": "ハミングsoon!",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 125,
+    "is_checked": true
+  },
+  "0b0U6Q9FGgt3wpUtmdxybK": {
+    "title": "a cup of happiness",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 100,
+    "is_checked": true
+  },
+  "1TKrAvPOssnoEoXmUIo33n": {
+    "title": "Rabbit Hole",
+    "artist": "ココア(佐倉綾音)&リゼ(種田梨沙)",
+    "bpm": 133,
+    "is_checked": true
+  },
+  "4XIDpakjOmEsP0bicyCIMh": {
+    "title": "スマイルメーカー",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 173,
+    "is_checked": true
+  },
+  "66xz1glCa6ORHp4Dh8XpLf": {
+    "title": "Love&Gun",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 177,
+    "is_checked": true
+  },
+  "36KYBHUJY7jhUjOJ1B8uv9": {
+    "title": "ずっと一緒",
+    "artist": "千夜(佐藤聡美)&シャロ(内田真礼)",
+    "bpm": 171,
+    "is_checked": true
+  },
+  "6R4i2Fig6aS1ClLCGNsGg6": {
+    "title": "色葉おしながき",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 135,
+    "is_checked": true
+  },
+  "40KfyPiKzx0lg02iVpZ6QQ": {
+    "title": "ときめきミルフィーユ",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 123,
+    "is_checked": true
+  },
+  "1QTP7wtViY0HzuLQYrJPlD": {
+    "title": "Eを探す日常",
+    "artist": "リゼ(種田梨沙)&シャロ(内田真礼)",
+    "bpm": 130,
+    "is_checked": true
+  },
+  "4iIJeYH9katoBIKgsPhT2B": {
+    "title": "夢見るアプレミディ",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "3RcKdNXhFjgu0ggfYMJRMe": {
+    "title": "麗しのShooting star",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "6U6Rj0HtKzCIesNwhafndh": {
+    "title": "一匙のお姫さま物語",
+    "artist": "Petit Rabbit's",
+    "bpm": 144,
+    "is_checked": true
+  },
+  "1X28JaS8bbMp5MqdlrVEfb": {
+    "title": "VSマイペース?",
+    "artist": "チノ(水瀬いのり)&リゼ(種田梨沙)&シャロ(内田真礼)",
+    "bpm": 178,
+    "is_checked": true
+  },
+  "21Dppn8Flg8liZvo2Ai1Sh": {
+    "title": "うさぎになったバリスタ",
+    "artist": "青山ブルーマウンテン(早見沙織)",
+    "bpm": 152,
+    "is_checked": true
+  },
+  "5tfmzKlPcwayCaTyWo23Dw": {
+    "title": "きらきらエブリディ",
+    "artist": "チマメ隊",
+    "bpm": 115,
+    "is_checked": true
+  },
+  "19UlHEPIQioL5osFsztGqp": {
+    "title": "宝箱のジェットコースター",
+    "artist": "Petit Rabbit's",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "0FBXSvivMqVhbeXdownHP5": {
+    "title": "チョコリズムチョコルール",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 186,
+    "is_checked": true
+  },
+  "4hYV2qStwHAfyghDPjdcsC": {
+    "title": "月夜にお砂糖星",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "6Km9IUqivddv9ZB3MIVNj0": {
+    "title": "ぴょん'sぷりんぷるん",
+    "artist": "チマメ隊",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "250ARR4UwIuhqEk1a0g6RI": {
+    "title": "ナマイキTiny Heart",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "2KH2dfY8nCCMNmXN9Uf7JK": {
+    "title": "ナイショのはなしは夢の中で",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 120,
+    "is_checked": true
+  },
+  "2VG0BgvMx8oSquD5cbKp8a": {
+    "title": "ハートぷるぷる事件です",
+    "artist": "振り回され隊",
+    "bpm": 172,
+    "is_checked": true
+  },
+  "4EXFRcgFqUy0WCmP3n4hop": {
+    "title": "ミカヅキドロップ",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "3M4wEG6DUaROM0tkUZgLtg": {
+    "title": "カフェインファイター",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 156,
+    "is_checked": true
+  },
+  "7jcNtBUinvkKPEkt5DiUyc": {
+    "title": "ノーポイッ!",
+    "artist": "Petit Rabbit's",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "2e2ak4S0dNxiTG2oxoK3La": {
+    "title": "ノーポイッ!～ココアver.～",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "4sTA8RCCAM7f6nMdDu9PxE": {
+    "title": "ノーポイッ!～チノver.～",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "5ZQXT7V3HcQG9lKxQpWB81": {
+    "title": "ノーポイッ!～リゼver.～",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "6dQLJavEFbpDaEHFihlwjS": {
+    "title": "ノーポイッ!～千夜ver.～",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "1imoOergkWOpKW2owr3An3": {
+    "title": "ノーポイッ!～シャロver.～",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "67f7MKPPakgRYZDtj28Vk6": {
+    "title": "なんとなくミライ",
+    "artist": "Petit Rabbit's",
+    "bpm": 126,
+    "is_checked": true
+  },
+  "3aPVXa50VOr2SyTQ5hA3Ok": {
+    "title": "ときめきポポロン♪",
+    "artist": "チマメ隊",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "4WwuE3UQc1Izi3o6QRgsNK": {
+    "title": "ときめきポポロン♪～チノver.～",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "0SuiRnzGUojOhNTuNMJM7o": {
+    "title": "ときめきポポロン♪～マヤver.～",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "1KDXv4EDrdf5apx9SZLa6a": {
+    "title": "ときめきポポロン♪～メグver.～",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "3A8psnDP62AEN2RkrOMuVg": {
+    "title": "ときめきLOOPにのって",
+    "artist": "チマメ隊",
+    "bpm": 179,
+    "is_checked": true
+  },
+  "3WTrav23gIzmvbRMwjv1Nm": {
+    "title": "出かけましょうと答えましょう",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 172,
+    "is_checked": true
+  },
+  "1KJocGTy5COBsw3irLkBLO": {
+    "title": "未来パズル",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "4nmwDIffCS1gfMrusygHjD": {
+    "title": "新作のしあわせはこちら!",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "28h76S0UUbCoZIce6L9gtR": {
+    "title": "きらきら☆アラモード",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "4bQxOjWAuCxRFcJvkM9wwl": {
+    "title": "そおっとブランケット",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 174,
+    "is_checked": true
+  },
+  "3wEdFhsSaXW7qzvVHZnbi7": {
+    "title": "かえりみちスキップ",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 135,
+    "is_checked": true
+  },
+  "7nQtwtgZx6KdkLvnq8N260": {
+    "title": "魔法少女チノ",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "1tgZ1wGebBydH9BU8xWniP": {
+    "title": "にっこりカフェの魔法使い",
+    "artist": "Petit Rabbit's",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "63jDK8ZeWbgtZHuOaLzRxv": {
+    "title": "冷静とモフモフの国境線",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 171,
+    "is_checked": true
+  },
+  "7ipVAhIR03F2kT6kMmpgvs": {
+    "title": "Sister or Sister",
+    "artist": "ココア(佐倉綾音)&モカ(茅野愛衣)",
+    "bpm": 144,
+    "is_checked": true
+  },
+  "3690mR0tawVi2jluIzFiPU": {
+    "title": "やきもち風味のカモミール",
+    "artist": "千夜(佐藤聡美)&シャロ(内田真礼)",
+    "bpm": 134,
+    "is_checked": true
+  },
+  "6r1oWI2UJSrqxST7DepQHH": {
+    "title": "お手伝いのラララン添えはいかがですか?",
+    "artist": "チマメ隊",
+    "bpm": 179,
+    "is_checked": true
+  },
+  "3lQOyFbKf7Oy4Csy0nG9RK": {
+    "title": "本日は誠にラリルレイン",
+    "artist": "Petit Rabbit's&チマメ隊",
+    "bpm": 183,
+    "is_checked": true
+  },
+  "0i38LoIhfANySeVJtBqBSG": {
+    "title": "WELCOME【う･さ!】 Petit Rabbit's Ver.",
+    "artist": "Petit Rabbit's",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "6kIGXge5cIeTVEAy5CAxOp": {
+    "title": "きらきら印を見つけたら",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 171,
+    "is_checked": true
+  },
+  "6I8xWnPIJfOxvAHaCXghna": {
+    "title": "ショコラティーヌ de 3時",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 133,
+    "is_checked": true
+  },
+  "2QsoJptpmMFmmPuFellsLd": {
+    "title": "WELCOME【う･さ!】 ココアVer.",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "290iHpAEOwNd2vta58uNXP": {
+    "title": "鏡合わせのアンビバレット",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 210,
+    "is_checked": true
+  },
+  "1jXLlnrTFZh9aWLxcfA1PW": {
+    "title": "Dear Me",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 182,
+    "is_checked": true
+  },
+  "1paBZKD8TgpWCdv3HHJo4j": {
+    "title": "WELCOME【う･さ!】 リゼVer.",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "7r56VzlIiYHh2wUvSozXpG": {
+    "title": "わくわくDIARY",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "3ERdoGeX4WzkcWW3AHT0Hg": {
+    "title": "Everyday Level Up!!",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "6NJHNg1HtI54Up23JWUWLK": {
+    "title": "WELCOME【う･さ!】 マヤVer.",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "1JKIlt2JLDoXXkQAAat85u": {
+    "title": "夢･もしもしもしも?",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 145,
+    "is_checked": true
+  },
+  "2kGQV14jIc4kRhm2nka98g": {
+    "title": "@ぐ～るぐるわーるど@",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 165,
+    "is_checked": true
+  },
+  "7BbSW724AL6IZnuDdK6tRs": {
+    "title": "WELCOME【う･さ!】 シャロVer.",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "7mlm7Wz6ZtarJsXfHQ36kl": {
+    "title": "おもちゃ箱ハピズム♪",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 121,
+    "is_checked": true
+  },
+  "6SlKSwU2Pq0HUx01QfOHZw": {
+    "title": "素敵なダンスタイム",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "3DiTjP2kJooZhxA29FB6db": {
+    "title": "WELCOME【う･さ!】 メグVer.",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "3ZLOy9xG8gMRNLDs0DsXQ0": {
+    "title": "お菓子な夢をおひとつどうぞ♪",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "6aGRpuBqFL0e2X5e0lWQV5": {
+    "title": "FUN!FUN!",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 163,
+    "is_checked": true
+  },
+  "5Sz6FaeFRYbUq5RCfrazjp": {
+    "title": "WELCOME【う･さ!】 チノVer.",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "2nDQJuUsGLcZIwfpqVMtij": {
+    "title": "ハートふるムーン",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 174,
+    "is_checked": true
+  },
+  "63CE8jtKyNfo8ZBqv13k0g": {
+    "title": "甘美コラボレーション",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "4wmoa9796bbAaqpmysAttZ": {
+    "title": "WELCOME【う･さ!】 千夜Ver.",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "2lnSIdyy6yJ4sgxDOJgfVq": {
+    "title": "きらめきを探しに",
+    "artist": "青山ブルーマウンテン(早見沙織)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "1fiYLWNURsDmQAbVCCrXkb": {
+    "title": "WELCOME【う･さ!】 青山ブルーマウンテンVer.",
+    "artist": "青山ブルーマウンテン(早見沙織)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "6pH9Rj65JxXEPwXlHaRIAt": {
+    "title": "おいしいパンの作り方",
+    "artist": "モカ(茅野愛衣)",
+    "bpm": 192,
+    "is_checked": true
+  },
+  "4rojdNaRL5w9VcSurpMufi": {
+    "title": "WELCOME【う･さ!】 モカVer.",
+    "artist": "モカ(茅野愛衣)",
+    "bpm": 159,
+    "is_checked": true
+  },
+  "5OFX9yCn3JI2PFxw6HB9Lr": {
+    "title": "てくてくマーチングマーチ",
+    "artist": "チマメ隊",
+    "bpm": 113,
+    "is_checked": true
+  },
+  "1rImDNo7dfrMCmbxOB5RvQ": {
+    "title": "CANDY COLOR DAYS",
+    "artist": "チマメ隊",
+    "bpm": 188,
+    "is_checked": true
+  },
+  "6OvS5LfQf6r6cz7PFRMdJd": {
+    "title": "Sunshine Days",
+    "artist": "チノ(水瀬いのり)&マヤ(徳井青空)",
+    "bpm": 192,
+    "is_checked": true
+  },
+  "4CrsVRm1NJnNhOCpvxyKX4": {
+    "title": "みえるよみえる",
+    "artist": "チノ(水瀬いのり)&メグ(村川梨衣)",
+    "bpm": 120,
+    "is_checked": true
+  },
+  "3YFFGpgCQOxafBZ4iKwk1R": {
+    "title": "すいーと･すきっぷ･すてっぷ",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 120,
+    "is_checked": true
+  },
+  "2fM8Mlxia57GFqWJtQ7Zb0": {
+    "title": "プレゼントレジャー♡",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 173,
+    "is_checked": true
+  },
+  "4fJj4UbBNC93i4sbgjvIII": {
+    "title": "リトル*トレジャー*ハント",
+    "artist": "マヤ(徳井青空)&メグ(村川梨衣)",
+    "bpm": 198,
+    "is_checked": true
+  },
+  "74el2bFIQ0noMyDIU5dx9I": {
+    "title": "あした元気になぁれ!",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "6cv1i85LzGSYoxVCsjSDO8": {
+    "title": "ココロそばにいるよ",
+    "artist": "チマメ隊",
+    "bpm": 172,
+    "is_checked": true
+  },
+  "5sb2vvywWHZNhvlrCx0vdQ": {
+    "title": "Daydream Cafe～チマメ隊Ver.～",
+    "artist": "チマメ隊",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "49n1N4YE1VEyHcOcoBLoMm": {
+    "title": "怪盗ラパン -The Phantom Thief Lapin-",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 192,
+    "is_checked": true
+  },
+  "688ohXKX27AlsmG36ZX2Zv": {
+    "title": "セカイがカフェになっちゃった!",
+    "artist": "Petit Rabbit's with beans",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "61bmWNcxjLkqg8li5hTa7j": {
+    "title": "ハピネスアンコール",
+    "artist": "Petit Rabbit's",
+    "bpm": 135,
+    "is_checked": true
+  },
+  "1qmVqfZ2JFp5Zb6VLoGb3O": {
+    "title": "コーヒーカップでエスコート",
+    "artist": "ココア(佐倉綾音)&チノ(水瀬いのり)",
+    "bpm": 134,
+    "is_checked": true
+  },
+  "73LLypr5dIp7rcyPtTovMy": {
+    "title": "♡♡ケーキをもうひとつ?",
+    "artist": "チマメ隊",
+    "bpm": 117,
+    "is_checked": true
+  },
+  "3w46qEq0aVeo00gLzaj2tM": {
+    "title": "FANCY SWEET TIME",
+    "artist": "千マメ隊",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "2WfcHY6UY2cN1RjVDycfmB": {
+    "title": "きらめきカフェタイム",
+    "artist": "ココア(CV.佐倉綾音)&チノ(CV.水瀬いのり)&リゼ(CV.種田梨沙)",
+    "bpm": 127,
+    "is_checked": true
+  },
+  "4FPgaSOTF7zbig6A5LCZJY": {
+    "title": "ポップコーンはぷにんぐ!",
+    "artist": "ココア(CV.佐倉綾音)&シャロ(CV.内田真礼)",
+    "bpm": 206,
+    "is_checked": true
+  },
+  "0XZ7GGPSXJK964YeaRxLpr": {
+    "title": "のんピースマイペース",
+    "artist": "ココア(佐倉綾音)&千夜(佐藤聡美)",
+    "bpm": 200,
+    "is_checked": true
+  },
+  "140huyyqDIFYto1YxxhZF5": {
+    "title": "足音タルトタタン♪",
+    "artist": "メグ(村川梨衣)&シャロ(内田真礼)",
+    "bpm": 193,
+    "is_checked": true
+  },
+  "5xS1aMVsCrnIMumAKXzmhd": {
+    "title": "Sing a Song!!!!!",
+    "artist": "リゼ(種田梨沙)&マヤ(徳井青空)",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "3RLCcoT1iEa2xP87j9aO8s": {
+    "title": "夢見FLAVOR",
+    "artist": "シャロ(内田真礼)&青山ブルーマウンテン(早見沙織)",
+    "bpm": 136,
+    "is_checked": true
+  },
+  "6E1fD9Wksa9PT3FJrfgfng": {
+    "title": "センチメンタルボタン",
+    "artist": "リゼ(種田梨沙)&千夜(佐藤聡美)",
+    "bpm": 176,
+    "is_checked": true
+  },
+  "42T1Ga2LSn3mf24dFkozrq": {
+    "title": "ラ･ラ･ラ!ラ?モーニング",
+    "artist": "モカ(茅野愛衣)&チノ(水瀬いのり)",
+    "bpm": 156,
+    "is_checked": true
+  },
+  "4WZcPEf1ITdFNS82LDcGPd": {
+    "title": "Fantastic Rabbit House",
+    "artist": "モカ(茅野愛衣)&青山ブルーマウンテン(早見沙織)&タカヒロ(速水奨)",
+    "bpm": 193,
+    "is_checked": true
+  },
+  "5fre82X7QZTlmpAc1pox4c": {
+    "title": "COCOATIC BAR",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 200,
+    "is_checked": true
+  },
+  "25ReMI3bt39zTgtTIaHEOj": {
+    "title": "パンパカパンのパンのパーティー",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "1LResc5NeKnOO1P4DIrmqs": {
+    "title": "わーいわーいトライ!～ココアVer.～",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "4xgAZNPANGnfiruC4sYkY8": {
+    "title": "Happy Holiday",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "7syqiMoStux1bQONgkKvue": {
+    "title": "パッと!花咲くティーポット",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "7hxCE6gw9f43fmac4548Ky": {
+    "title": "わーいわーいトライ!～シャロVer.～",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "1SF0jTpM3SZTdezZVy5Sxn": {
+    "title": "Bitter Tea:Time",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 196,
+    "is_checked": true
+  },
+  "3dg3vNww2hzWoSzo2EoJ9E": {
+    "title": "とびっきりアネバーサリー",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 196,
+    "is_checked": true
+  },
+  "2E9zD1B1CRtKAeP6yqp2a1": {
+    "title": "わーいわーいトライ!～モカVer.～",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "1AVIuiG8Og8lBbx8CmibqF": {
+    "title": "ラ･エレガンス",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 122,
+    "is_checked": true
+  },
+  "3dYIIPoRD94JMkjFEmbj44": {
+    "title": "流星ガーデン",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 132,
+    "is_checked": true
+  },
+  "33kVjF8WxyihU8z416cflJ": {
+    "title": "わーいわーいトライ!～青山ブルーマウンテンVer.～",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "2Fe23vZFvgnsFqsjFvvJWx": {
+    "title": "ミッドナイト･パーティー",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 117,
+    "is_checked": true
+  },
+  "3ZjPVmh0L1a4FrvM2inRHW": {
+    "title": "ぱりぷれいやー!!",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 146,
+    "is_checked": true
+  },
+  "0Qu0pNsYJyRYdNvY4b9Qrd": {
+    "title": "わーいわーいトライ!～マヤVer.～",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "6KbgjPzkxOvJIcqwkoe8V2": {
+    "title": "あん･どぅ･とろわ",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 176,
+    "is_checked": true
+  },
+  "4M5bsKFPZpdarT9gftcrEF": {
+    "title": "パジャマプラネタリウム",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "0YtN5qPNCYas0juUPxcOk1": {
+    "title": "わーいわーいトライ!～メグVer.～",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "49VQtZS7DpFgdsmhUq2RZK": {
+    "title": "私と浪漫ていすと",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 155,
+    "is_checked": true
+  },
+  "36cd5ZNPFVxt1SPee7Uqy1": {
+    "title": "お茶会物語",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "4xVVn38To6cbeHslpUNAJj": {
+    "title": "わーいわーいトライ!～千夜Ver.～",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "25yAoNnP6rfbMDBUd8mYB9": {
+    "title": "0時過ぎのWonder Cocktail",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 200,
+    "is_checked": true
+  },
+  "1RHnihu2jfYjAIyFQo16PG": {
+    "title": "無敵のMidnight crew",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "5QAru1Cx0D1bbqEuEDwJW5": {
+    "title": "わーいわーいトライ!～リゼVer.～",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "6d94WvhF2GFzXlE1N7uAAz": {
+    "title": "センチメンタルごっこ",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "2wQbQxgLsOotsdQwyMcEhX": {
+    "title": "ヒミツのおもてなし",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 104,
+    "is_checked": true
+  },
+  "6UU3Q5GfJyedDv0bHqtoF0": {
+    "title": "わーいわーいトライ!～チノVer.～",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "0HsmlSKr9gYgjP4In3GwZF": {
+    "title": "ハピハピ♪バースデイソング ～リゼVer.～",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "4qt3k6mHjRl1S6dMNAlIDj": {
+    "title": "チョコレート･アスレチック",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "6Ww2xSlNOrwVtMlu2EakER": {
+    "title": "ドキドキのはじまり",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 116,
+    "is_checked": true
+  },
+  "3qwuXqLkhgOuD7eB5uHGEf": {
+    "title": "ハピハピ♪バースデイソング ～モカVer.～",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "4k0sXZThYkF0eTefQl9Rnk": {
+    "title": "3月の扉",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "3tMJJMDcg0mzjsZ6rAhS3t": {
+    "title": "ホットホワイトデリバリー♪",
+    "artist": "モカ(CV.茅野愛衣)",
+    "bpm": 176,
+    "is_checked": true
+  },
+  "3JElS1HQebJk1nLMTbiQXN": {
+    "title": "ハピハピ♪バースデイソング ～ココアVer.～",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "0Bi3Hw0kon1xBRbkg87T44": {
+    "title": "Spring Hello!!",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "1eJMwpKe8EeQGqOK0tz03P": {
+    "title": "トラブル!?トラベル!!",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "71ZOCzYbmeDXVQsVLcoSC1": {
+    "title": "ハピハピ♪バースデイソング ～シャロVer.～",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "2iyBefgxreRPmIR6uIhsaZ": {
+    "title": "とびきりsummer time",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 185,
+    "is_checked": true
+  },
+  "54yxwDze1seLq6hHFP3FFf": {
+    "title": "思い出花火",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 188,
+    "is_checked": true
+  },
+  "4EPcdLN189OZqEM5tNEvPh": {
+    "title": "ハピハピ♪バースデイソング ～マヤVer.～",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "2jzusQBeVStYRNQaK6sMTY": {
+    "title": "お祭り輪っしょい!!",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 152,
+    "is_checked": true
+  },
+  "0jDO9AzQ8mMcH768YJjs1o": {
+    "title": "夏休みページ",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 136,
+    "is_checked": true
+  },
+  "4vMRQKA7B3mkVVk8HUwpZx": {
+    "title": "ハピハピ♪バースデイソング ～千夜Ver.～",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "0u4CFY6h6SrScmrCk8isUH": {
+    "title": "お月見数え唄",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 107,
+    "is_checked": true
+  },
+  "11uuArWAs4JSjOXtbeUyaW": {
+    "title": "天高くおとめこゆる秋",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 134,
+    "is_checked": true
+  },
+  "5hF3jNbodWt6Z6Nbl2oApk": {
+    "title": "ハピハピ♪バースデイソング ～青山ブルーマウンテンVer.～",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "4qbB0TGupqOZD8L9qJWvWe": {
+    "title": "マワールエスポワール",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 165,
+    "is_checked": true
+  },
+  "5CjNelzqTZ7tb9BHzSoAfe": {
+    "title": "メランコリアフタヌーン",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "6YwUuSWT2IIBnD3nrKLvvF": {
+    "title": "ご注文はうさぎですか??バースデイソングシリーズ08",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "52Xic7tcSa9jWPHe8Eq3Vp": {
+    "title": "秋色かくれんぼ",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "4N6tLATxHRPQxu88Vj0aFN": {
+    "title": "チャイム♪タイムカプセル",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 162,
+    "is_checked": true
+  },
+  "3UcZhxiQj10kJYaJrrWatO": {
+    "title": "ハピハピ♪バースデイソング ～チノVer.～",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "6Y3tsj65E5ipc5B53UdEaz": {
+    "title": "Tiny Christmas Party",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "5Whpvzg8Njn57z4VQqYH9T": {
+    "title": "winter*gift",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 115,
+    "is_checked": true
+  },
+  "6zywglolxY8UReVCpiiqru": {
+    "title": "しんがーそんぐぱやぽやメロディー",
+    "artist": "Petit Rabbit's with beans",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "46SPXtXdIQxRWOnFah8JQT": {
+    "title": "しんがーそんぐぱやぽやメロディー ～ココアVer.～",
+    "artist": "ココア(CV.佐倉綾音)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "0yMDReEsePmXEnVrLzgwdz": {
+    "title": "しんがーそんぐぱやぽやメロディー ～チノVer.～",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "2mJh2Ysmf7Z6kcMEIIa3MX": {
+    "title": "しんがーそんぐぱやぽやメロディー ～リゼVer.～",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "3gR5wBIyorulaADpFbTYmr": {
+    "title": "しんがーそんぐぱやぽやメロディー ～千夜Ver.～",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "5Mv4bwUXoYU1QOOa166cMA": {
+    "title": "しんがーそんぐぱやぽやメロディー ～シャロVer.～",
+    "artist": "シャロ(CV.内田真礼)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "6DqMgMlqG9mCphwictPOfY": {
+    "title": "しんがーそんぐぱやぽやメロディー ～マヤVer.～",
+    "artist": "マヤ(CV.徳井青空)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "4pSbiOAFDzvleSZ8LWjgvj": {
+    "title": "しんがーそんぐぱやぽやメロディー ～メグVer.～",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "1QIYb2Feg1cL6mAv96PhC0": {
+    "title": "ギミ×デミぱーりないっ♪",
+    "artist": "リゼ(CV.種田梨沙)&マヤ(CV.徳井青空)&メグ(CV.村川梨衣)",
+    "bpm": 148,
+    "is_checked": true
+  },
+  "5hmZI6F0jE8jpUq9LGKadI": {
+    "title": "幻のルビーラビット事件",
+    "artist": "魔法少女チノ(水瀬いのり)×怪盗ラパン(内田真礼)マホウショウジョチノカイトウラパン",
+    "bpm": 125,
+    "is_checked": true
+  },
+  "6AwnwHISxQYiXRlECPlnf7": {
+    "title": "MIRACLE CHRONICLE♪",
+    "artist": "CHIMAME CHRONICLE",
+    "bpm": 146,
+    "is_checked": true
+  },
+  "4PwEdMpkYGR70rNrAq2Ir0": {
+    "title": "らびっとビビっとShow Time*",
+    "artist": "Happine",
+    "bpm": 155,
+    "is_checked": true
+  },
+  "1Ih8tIkqZBg4JhIgo2SFlf": {
+    "title": "ショコらびゅサバイバル♪",
+    "artist": "Mistral",
+    "bpm": 122,
+    "is_checked": true
+  },
+  "4FFTZszxCsTzZ6fekCraWe": {
+    "title": "かさねおり",
+    "artist": "Diva",
+    "bpm": 142,
+    "is_checked": true
+  },
+  "10gyG0qirq1IRBsPY5s6hZ": {
+    "title": "ピポパポPeople!",
+    "artist": "CLOCKWORK RABBIT",
+    "bpm": 192,
+    "is_checked": true
+  },
+  "4ScdhqiJplax7ufpunVnyt": {
+    "title": "ボトルシップの旅",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 156,
+    "is_checked": true
+  },
+  "0nvgZKNIikMiQJAqfvmxgM": {
+    "title": "わくわく魔法のチカラ",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "5m9hjTRj4LphE65T54d1yL": {
+    "title": "文色徒然",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "66uaNp1GvUJGvm3Wpa0MFO": {
+    "title": "空色サロン",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 152,
+    "is_checked": true
+  },
+  "5W3VdRT1W4FBBjdLWL0z50": {
+    "title": "紙ヒコーキレター",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "6AgUMr6FaHAlNXmOCzYpI5": {
+    "title": "あこがれプリーツ♡",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 117,
+    "is_checked": true
+  },
+  "100JET2vC2h9i4EyPnRx0Y": {
+    "title": "頼れる私でいられるように",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "0dyL9PgC8KnDRfxWTrcg4H": {
+    "title": "おかえりなさい～Dear my sister～",
+    "artist": "モカ(茅野愛衣)",
+    "bpm": 172,
+    "is_checked": true
+  },
+  "7uTkaHFhsYR1MuEQjYN8bK": {
+    "title": "風の便り",
+    "artist": "青山ブルーマウンテン(早見沙織)",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "6Z3IJCVS5k9fkxWWXhKqAh": {
+    "title": "Growth Record",
+    "artist": "タカヒロ(速水 奨)",
+    "bpm": 121,
+    "is_checked": true
+  },
+  "3QqeZnajC0ehlBfruJbzQe": {
+    "title": "天空カフェテリア",
+    "artist": "Petit Rabbit's",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "4V7EEphuvR7fwKPgpkQrzl": {
+    "title": "天空カフェテリア ～ココアVer.～",
+    "artist": "ココア(佐倉綾音)",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "3sO8kwqrAGeCzZp0TE30sQ": {
+    "title": "天空カフェテリア ～チノVer.～",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "1xiC6YrKRTxLUD1SnPUq1O": {
+    "title": "天空カフェテリア ～リゼVer.～",
+    "artist": "リゼ(種田梨沙)",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "1mTvIdb9Iwd0banS6pRv1e": {
+    "title": "天空カフェテリア ～千夜Ver.～",
+    "artist": "千夜（佐藤聡美）",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "4YHiqy9Ydge1oRRzOrrC4e": {
+    "title": "天空カフェテリア ～シャロVer.～",
+    "artist": "シャロ(内田真礼)",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "69g4HEMXiZwJHd5bmw8xWj": {
+    "title": "ユメ<ウツツ→ハッピータイム",
+    "artist": "Petit Rabbit's",
+    "bpm": 131,
+    "is_checked": true
+  },
+  "38SPohlvWsCOGhizUvidOu": {
+    "title": "なかよし!〇!なかよし!",
+    "artist": "チマメ隊",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "7cu2B6tJsdUALtTVnwlU9w": {
+    "title": "なかよし!〇!なかよし! ～チノVer.～",
+    "artist": "チノ(水瀬いのり",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "0FlQeYUuqdTU1n0kDhN9z0": {
+    "title": "なかよし!〇!なかよし! ～マヤVer.～",
+    "artist": "マヤ(徳井青空)",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "4SOOEizCqisUX2kXHaxqT6": {
+    "title": "なかよし!〇!なかよし! ～メグVer.～",
+    "artist": "メグ(村川梨衣)",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "416wKNLCsFDFzAvB3eclnz": {
+    "title": "ワオワオ動物園",
+    "artist": "チマメ隊",
+    "bpm": 189,
+    "is_checked": true
+  },
+  "6PzycD36xZTUR7kO8IeBv8": {
+    "title": "一匙のお姫さま物語 ～Rearrange～",
+    "artist": "Petit Rabbit's",
+    "bpm": 144,
+    "is_checked": true
+  },
+  "6sGvLwt1TLZwhYlgCPsfmx": {
+    "title": "VSマイペース? ～Rearrange～",
+    "artist": "チノ(CV.水瀬いのり)&リゼ(CV.種田梨沙)&シャロ(CV.内田真礼)",
+    "bpm": 178,
+    "is_checked": true
+  },
+  "40ZY1iepE2HE48E8YISfVU": {
+    "title": "きらきらエブリディ ～Rearrange～",
+    "artist": "チマメ隊",
+    "bpm": 115,
+    "is_checked": true
+  },
+  "5rWZLAZVVLbmq9yjA6EFkp": {
+    "title": "宝箱のジェットコースター ～Rearrange～",
+    "artist": "Petit Rabbit's",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "3clLNZxWYU7degD9p5Xmdd": {
+    "title": "ぴょん'sぷりんぷるん ～Rearrange～",
+    "artist": "チマメ隊",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "3HTzaV3jHqYjXR4VM93Rfb": {
+    "title": "ハートぷるぷる事件です ～Rearrange～",
+    "artist": "振り回され隊",
+    "bpm": 176,
+    "is_checked": true
+  },
+  "47DSHd0DYqIu3rP8MxX4yL": {
+    "title": "なんとなくミライ ～Rearrange～",
+    "artist": "Petit Rabbit's",
+    "bpm": 126,
+    "is_checked": true
+  },
+  "73FGrhu5JkjAc9TA30JQ5P": {
+    "title": "にっこりカフェの魔法使い ～Rearrange～",
+    "artist": "Petit Rabbit's",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "7Hfpa7TdV6PdrjIxzk5rY7": {
+    "title": "本日は誠にラリルレイン ～Rearrange～",
+    "artist": "ココア(CV.佐倉綾音)&チノ(CV.水瀬いのり)&リゼ(CV.種田梨沙)&千夜(CV.佐藤聡美)&シャロ(CV.内田真礼)&マヤ(CV.徳井青空)&メグ(CV.村川梨衣)",
+    "bpm": 183,
+    "is_checked": true
+  },
+  "511PxQO6KtIcj5aM4adAE7": {
+    "title": "お手伝いのラララン添えはいかがですか? ～Rearrange～",
+    "artist": "チマメ隊",
+    "bpm": 179,
+    "is_checked": true
+  },
+  "1FkIMjZZgFTeUbnUoL4SZZ": {
+    "title": "Eを探す日常 ～Cover～",
+    "artist": "ココア(CV.佐倉綾音)&チノ(CV.水瀬いのり)",
+    "bpm": 130,
+    "is_checked": true
+  },
+  "6kmCi3iZUImZ5TrGJY08a2": {
+    "title": "きらめきカフェタイム ～Cover～",
+    "artist": "千夜(CV.佐藤聡美)&マヤ(CV.徳井青空)&メグ(CV.村川梨衣)",
+    "bpm": 127,
+    "is_checked": true
+  },
+  "4lGllIeTeZlIDSjNOVMA0M": {
+    "title": "うさぎになったバリスタ ～Cover～",
+    "artist": "チノ(CV.水瀬いのり)",
+    "bpm": 138,
+    "is_checked": true
+  },
+  "464YMWmqLvAeiA2dhLUR1f": {
+    "title": "Rabbit Hole ～Cover～",
+    "artist": "シャロ(CV.内田真礼)&マヤ(CV.徳井青空)",
+    "bpm": 133,
+    "is_checked": true
+  },
+  "5nwxIEpy4mbP8wcb2lBg6f": {
+    "title": "CANDY COLOR DAYS ～Cover～",
+    "artist": "ココア(CV.佐倉綾音)&リゼ(CV.種田梨沙)&シャロ(CV.内田真礼)",
+    "bpm": 188,
+    "is_checked": true
+  },
+  "20t39J4kUjvLMwCH7UsX8m": {
+    "title": "怪盗ラパン ―The Phantom Thief Lapin― ～Cover～",
+    "artist": "青山ブルーマウンテン(CV.早見沙織)",
+    "bpm": 132,
+    "is_checked": true
+  },
+  "7ejrC4JehAze2AFmRc4M06": {
+    "title": "全天候型いらっしゃいませ ～Cover～",
+    "artist": "千夜(CV.佐藤聡美)&モカ(CV.茅野愛衣)",
+    "bpm": 143,
+    "is_checked": true
+  },
+  "66ooSKTjpmDGsZc9FJgaxG": {
+    "title": "てくてくマーチングマーチ ～Cover～",
+    "artist": "ココア(CV.佐倉綾音)&千夜(CV.佐藤聡美)&シャロ(CV.内田真礼)",
+    "bpm": 113,
+    "is_checked": true
+  },
+  "70VyBFd3ZR3GDaunAAUfXY": {
+    "title": "きらきら印を見つけたら ～Cover～",
+    "artist": "メグ(CV.村川梨衣)",
+    "bpm": 171,
+    "is_checked": true
+  },
+  "57KZGcyHOyGarpGQrN0Dom": {
+    "title": "ときめきLOOPにのって ～Cover～",
+    "artist": "リゼ(CV.種田梨沙)&青山ブルーマウンテン(CV.早見沙織)&モカ(CV.茅野愛衣)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "2HYffdh4HRhuufpcEXagIY": {
+    "title": "ふわふわバルーンが飛び出した!",
+    "artist": "フユ(CV.石見舞菜香)",
+    "bpm": 208,
+    "is_checked": true
+  },
+  "6j3qzUvCDMJkQntZsOTNzi": {
+    "title": "チェスマッチカフェチェックオレ",
+    "artist": "チノ(CV.水瀬いのり)&フユ(CV.石見舞菜香)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "0YY4Z72FWi8E2fND3dnFz2": {
+    "title": "Daydream café ～Re arranged～",
+    "artist": "Petit Rabbit's",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "0Hiq7goSWwYSgoLzW7WLVr": {
+    "title": "ぽっぴんジャンプ♪ ～Re arranged～",
+    "artist": "チマメ隊",
+    "bpm": 144,
+    "is_checked": true
+  },
+  "3pCV3K2bP5BMK9vb8jibkm": {
+    "title": "ノーポイッ! ～Re arranged～",
+    "artist": "Petit Rabbit's",
+    "bpm": 158,
+    "is_checked": true
+  },
+  "2MJ9c3rgFjRJ3wkPaOJjxY": {
+    "title": "ときめきポポロン♪ ～Re arranged～",
+    "artist": "チマメ隊",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "40dO7NDCHLmEx1BBWtriB0": {
+    "title": "天空カフェテリア ～Re arranged～",
+    "artist": "Petit Rabbit's",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "3jhqQv1rz4LcwaKVAunBuv": {
+    "title": "なかよし!〇!なかよし! ～Re arranged～",
+    "artist": "チマメ隊",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "0oSYSmP3p93oYcpJUuQhSi": {
+    "title": "夢グライダー",
+    "artist": "ゆの (CV.阿澄佳奈)",
+    "bpm": 145,
+    "is_checked": true
+  },
+  "1J9U18yVS25P2A0ygwjLdm": {
+    "title": "君へとつなぐココロ (カバー) feat.MAKI+Ma15",
+    "artist": "Acid=Stone Valley",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "0zAqDGKBL9be9oZLtGKfTd": {
+    "title": "Coloring palettes キサラギいろ",
+    "artist": "山口如月(キサラギ)",
+    "bpm": 129,
+    "is_checked": true
+  },
+  "4zpKPAjjxBMhGcNtXWsZGw": {
+    "title": "色彩戦隊イロドルンジャー",
+    "artist": "イロドルンジャー(トモカネ/キサラギ/ノダミキ/キョージュ/ナミコ)",
+    "bpm": 156,
+    "is_checked": true
+  },
+  "0iFfDd2qlLwdF3U4XEJFCR": {
+    "title": "さくらさくら咲く 〜あの日君を待つ 空と同じで〜",
+    "artist": "marble",
+    "bpm": 186,
+    "is_checked": true
+  },
+  "5xTpeM7GzFfhKjAJA6rsHa": {
+    "title": "コネクト",
+    "artist": "ClariS",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "7B2hgrvJ8mprRXEjqOrEmy": {
+    "title": "Magia",
+    "artist": "Kalafina",
+    "bpm": 125,
+    "is_checked": true
+  },
+  "2tOCLkfPBePy3KvulgTmx8": {
+    "title": "Morning Arch",
+    "artist": "河野 マリナ",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "4R8dyBtbjw0rCIHrri1V4s": {
+    "title": "バルーンシアター",
+    "artist": "河野 マリナ",
+    "bpm": 172,
+    "is_checked": true
+  },
+  "53ULWYaYKSAHxfM2PmHbXq": {
+    "title": "気まぐれ、じゃんけんポンっ!",
+    "artist": "ゆの (CV.阿澄佳奈)",
+    "bpm": 109,
+    "is_checked": true
+  },
+  "2j6SiCgnHpmTkqtoHslNOc": {
+    "title": "nora",
+    "artist": "marble",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "31FgqHricuSvxIUfwX5mDN": {
+    "title": "夢ぐも",
+    "artist": "marble",
+    "bpm": 176,
+    "is_checked": true
+  },
+  "7pgqG0Uf5m4qSirtuQnoJQ": {
+    "title": "きらめきっ!の日",
+    "artist": "情報処理部",
+    "bpm": 174,
+    "is_checked": true
+  },
+  "6ffkkQys1C3d36tzknMaI6": {
+    "title": "青空のつくりかた",
+    "artist": "情報処理部",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "4Aptn7aQuFITHjB1oFlI69": {
+    "title": "君の銀の庭",
+    "artist": "Kalafina",
+    "bpm": 148,
+    "is_checked": true
+  },
+  "4S5ENooXKkcr72mzLXCHXN": {
+    "title": "Your Voice",
+    "artist": "Rhodanthe*",
+    "bpm": 116,
+    "is_checked": true
+  },
+  "1iLYBvyAKxBbo4p0MGXHUx": {
+    "title": "またね、ようこそ、ひだまり荘",
+    "artist": "ゆの (CV.阿澄佳奈)",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "2tvvT2Skqrg0OxZuAynSdt": {
+    "title": "桜Sweet Kiss",
+    "artist": "澄(CV:麻倉もも)",
+    "bpm": 130,
+    "is_checked": true
+  },
+  "3AdtUKxxIsPEV3nJC0U3Hk": {
+    "title": "Daydream cafe",
+    "artist": "Petit Rabbit's",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "38PYaB5ZFJ8DM5fCxdOMpP": {
+    "title": "ヨロコビ・シンクロニシティ",
+    "artist": "チーム“ハナヤマタ”",
+    "bpm": 165,
+    "is_checked": true
+  },
+  "7cQDl65VZpxbIZnxbUIzEB": {
+    "title": "ぎんいろスノウドロップ",
+    "artist": "Rhodanthe*",
+    "bpm": 152,
+    "is_checked": true
+  },
+  "0qjkwoMbM6Jubn8kQKNLMA": {
+    "title": "きらめきいろサマーレインボー",
+    "artist": "Rhodanthe*",
+    "bpm": 123,
+    "is_checked": true
+  },
+  "3ilJmXkbD656uTZzMjTbjH": {
+    "title": "ふ･れ･ん･ど･し･た･い",
+    "artist": "学園生活部",
+    "bpm": 148,
+    "is_checked": true
+  },
+  "6HVFUOAhi5bkdYm7fvuC1v": {
+    "title": "ハーモナイズ･クローバー",
+    "artist": "黒崎真音",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "2ET5Y8jDJJ5gYyAoapN0Fk": {
+    "title": "アフターグロウ",
+    "artist": "黒崎真音",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "6lnFKUpmNLnW9O6c6H0sAm": {
+    "title": "Kyou Wa Oyasuminasai",
+    "artist": "Lars Sorensen",
+    "bpm": 130,
+    "is_checked": true
+  },
+  "7EtWAxDVgKzSgKf6yOkapf": {
+    "title": "Honey Come!!",
+    "artist": "小倉唯",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "6iGR8fo6zChZhHcAC0subK": {
+    "title": "初めてガールズ!",
+    "artist": "Ray",
+    "bpm": 126,
+    "is_checked": true
+  },
+  "0x0Ua4Zzp9ZLY25v8cE8P6": {
+    "title": "わいわいお天気ロード",
+    "artist": "Happy Clover",
+    "bpm": 136,
+    "is_checked": true
+  },
+  "12atS0Cicnx9078tVLyFQh": {
+    "title": "Happy★Pretty★Clover",
+    "artist": "Rhodanthe*",
+    "bpm": 182,
+    "is_checked": true
+  },
+  "3bTcAGZMBNTBGekg7CeDR7": {
+    "title": "Starring!!",
+    "artist": "Rhodanthe*",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "4tRluQ3OVRGDE9CMTALg3t": {
+    "title": "Shining Star",
+    "artist": "Rhodanthe*",
+    "bpm": 117,
+    "is_checked": true
+  },
+  "04R79UyP9G1DtpcicQG0BN": {
+    "title": "夢路らびりんす",
+    "artist": "らびりんず 千矢(CV.原田彩楓)&紺(CV.本渡 楓)&小梅(CV.久保ユリカ)&ノノ(CV.佳村はるか)",
+    "bpm": 162,
+    "is_checked": true
+  },
+  "6oKocnT8B2Zz6y6Mz0UsR7": {
+    "title": "go to Romance>>>>>",
+    "artist": "Luce Twinkle Wink☆",
+    "bpm": 113,
+    "is_checked": true
+  },
+  "6SgwocRvle9NFtRW9yajbe": {
+    "title": "Baby's breath",
+    "artist": "(K)NoW_NAME",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "26PEDfp75cgnIey0sNCx4P": {
+    "title": "デタラメなマイナスとプラスにおけるブレンド考",
+    "artist": "ブレンド・A",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "157o7xpPEGjF0ctWzGC6Fg": {
+    "title": "SHINY DAYS",
+    "artist": "亜咲花",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "2VWBEHcIvNn5LgQZr0lxPg": {
+    "title": "ふゆびより",
+    "artist": "佐々木恵梨",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "1ZaEId4stXdku43z83rArK": {
+    "title": "風の声を聴きながら",
+    "artist": "三月のパンタシア",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "5rvQtFtya23GR89NlmV3ZA": {
+    "title": "ストレスフリー",
+    "artist": "大原ゆい子",
+    "bpm": 174,
+    "is_checked": true
+  },
+  "5exxVZptTeu05DYJjOgUH0": {
+    "title": "君と見た星",
+    "artist": "真中あお(CV:山口愛)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "4GzioP9JezQkYAAeLqjyUc": {
+    "title": "ごまかし",
+    "artist": "TrySail",
+    "bpm": 189,
+    "is_checked": true
+  },
+  "2GN7IY3n0vw8Ur16LaP0i5": {
+    "title": "アリシア",
+    "artist": "ClariS",
+    "bpm": 164,
+    "is_checked": true
+  },
+  "6OQ9kn5LJEsHkigcPmiS5d": {
+    "title": "天空カフェテリア<TVサイズ>",
+    "artist": "Petit Rabbit's",
+    "bpm": 154,
+    "is_checked": true
+  },
+  "1aslS5CGworM3GPU6wucdG": {
+    "title": "なかよし!〇!なかよし!<TVサイズ>",
+    "artist": "チマメ隊",
+    "bpm": 124,
+    "is_checked": true
+  },
+  "3NJSKLWLI0aE3ERQp71j2k": {
+    "title": "Seize The Day - TVSize",
+    "artist": "亜咲花",
+    "bpm": 122,
+    "is_checked": true
+  },
+  "2aChmbmiz3t0mWMOXdyl0W": {
+    "title": "はるのとなり - TVSize",
+    "artist": "佐々木恵梨",
+    "bpm": 123,
+    "is_checked": true
+  },
+  "1VXtJBlLI87N33zI9blapQ": {
+    "title": "この場所で。",
+    "artist": "屋内活動サークル(立山秋航、佐々木恵梨、亜咲花)",
+    "bpm": 123,
+    "is_checked": true
+  },
+  "7DZspJXaIqnwqJ4l9isXl8": {
+    "title": "Cheers",
+    "artist": "Rhodanthe*",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "1uY4FNmAUGWl5OykflwSRO": {
+    "title": "Thank You for Your Smile",
+    "artist": "Rhodanthe*",
+    "bpm": 110,
+    "is_checked": true
+  },
+  "2uGdsP8Ejb4gjuyI0GkzNL": {
+    "title": "ときめきランデヴー - TV size edit",
+    "artist": "shami momo",
+    "bpm": 200,
+    "is_checked": true
+  },
+  "294QiTuZaUg7XV98TPqkdm": {
+    "title": "宵加減テトラゴン - TV size edit",
+    "artist": "コーロまちカド",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "6epq4VOqM4rI4Kk0IcaMj5": {
+    "title": "宵加減テトラゴン",
+    "artist": "コーロまちカド",
+    "bpm": 166,
+    "is_checked": true
+  },
+  "2jgypZwz96RpBM41flPHIQ": {
+    "title": "Maddy Candy",
+    "artist": "DEATH DEVIL [山中さわ子(CV:真田アサミ)]",
+    "bpm": 152,
+    "is_checked": true
+  },
+  "15pPXJgSQPRN5EQwlMedmn": {
+    "title": "Lupinus",
+    "artist": "(K)NoW_NAME",
+    "bpm": 135,
+    "is_checked": true
+  },
+  "5ARUjXSfoNLlf5LEiVXwG8": {
+    "title": "毎日コハルビヨリ",
+    "artist": "あおい(CV:井口裕香)",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "3rZeUm3mlTICVe4RNNPkak": {
+    "title": "カタツムリまいんど",
+    "artist": "あおい(CV:井口裕香)",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "2sBKfYEZ2ZKR2lgiCNJJs3": {
+    "title": "てっぺん目指し隊",
+    "artist": "ひなた(CV:阿澄佳奈)",
+    "bpm": 120,
+    "is_checked": true
+  },
+  "1Qeo2mkfVbVFD6YwojUZ7q": {
+    "title": "追い風ホイッスル",
+    "artist": "かえで(CV:日笠陽子)",
+    "bpm": 136,
+    "is_checked": true
+  },
+  "56EzwG1pB7nk7NWFg1Ydvm": {
+    "title": "テンダー・ファインダー",
+    "artist": "ほのか(CV:東山奈央)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "2E9t7ZhjjmVJN8AHdEF8WQ": {
+    "title": "僕の宝物",
+    "artist": "ぽかぽかイオン",
+    "bpm": 181,
+    "is_checked": true
+  },
+  "2SQkYt0TkELKE3CLRYrG80": {
+    "title": "CONTINUE...?",
+    "artist": "涼風青葉(CV:高田憂希)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "4LjLilt8y2Qhwtqto9e3np": {
+    "title": "ワタシConnect*",
+    "artist": "滝本ひふみ(CV:山口 愛)",
+    "bpm": 145,
+    "is_checked": true
+  },
+  "51Gl6OoUB9mBLu0tZxieR2": {
+    "title": "Shake!",
+    "artist": "fourfolium",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "7cum6sSaw1rgoW0rMJoExU": {
+    "title": "ゆりゆららららゆるゆり大事件",
+    "artist": "七森中☆ごらく部",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "0o6YyLvOzKzBpYBGb3YCqW": {
+    "title": "マイペースでいきましょう",
+    "artist": "七森中☆ごらく部",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "2hige38D9age9DpujzMHDf": {
+    "title": "いぇす!ゆゆゆ☆ゆるゆり♪♪",
+    "artist": "七森中☆ごらく部",
+    "bpm": 182,
+    "is_checked": true
+  },
+  "7j6RXX1uofPfbUXAaQSd91": {
+    "title": "100%ちゅ~学生",
+    "artist": "七森中☆ごらく部",
+    "bpm": 105,
+    "is_checked": true
+  },
+  "124qohSoacHMyxJZvdTRZP": {
+    "title": "ゆるゆりんりんりんりんりん",
+    "artist": "七森中☆ごらく部",
+    "bpm": 185,
+    "is_checked": true
+  },
+  "0j548VtOBZyWqFAuBoCpOQ": {
+    "title": "ちょちょちょ!ゆるゆり☆かぷりっちょ!!!",
+    "artist": "七森中☆ごらく部",
+    "bpm": 190,
+    "is_checked": true
+  },
+  "1bm35zVvXlgfYqUViJDygw": {
+    "title": "あっちゅ~ま青春!",
+    "artist": "七森中☆ごらく部",
+    "bpm": 184,
+    "is_checked": true
+  },
+  "6lyjBuy47soDwpyDtCxd0i": {
+    "title": "きみがくれたシャイニーストーリー",
+    "artist": "七森中☆ごらく部",
+    "bpm": 132,
+    "is_checked": true
+  },
+  "1PihLO76k4mMrylLoHiQJX": {
+    "title": "いちごコンプリート",
+    "artist": "千葉紗子、折笠富美子、川澄綾子、能登麻美子",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "6wZzo4Chc1fKCGBIdhT1ma": {
+    "title": "Jumping!!",
+    "artist": "Rhodanthe*",
+    "bpm": 175,
+    "is_checked": true
+  },
+  "5HjM8IKwqeHBSe3w16RfMV": {
+    "title": "初めてガールズ!",
+    "artist": "一年藤組(小澤亜李､井澤美香子､M･A･O､村川梨衣)",
+    "bpm": 126,
+    "is_checked": true
+  },
+  "49c2JBSQnxgsZGFnUqaZfM": {
+    "title": "ジャンプアップ↑エール!!",
+    "artist": "神ノ木高校チアリーディング部",
+    "bpm": 106,
+    "is_checked": true
+  },
+  "7DGlPJwVQY3INApfDS0l8P": {
+    "title": "花ハ踊レヤいろはにほ",
+    "artist": "チーム“ハナヤマタ”",
+    "bpm": 160,
+    "is_checked": true
+  },
+  "1XI88ElXasHMdjTu4liZCp": {
+    "title": "こだまことだま",
+    "artist": "nano.RIPE",
+    "bpm": 120,
+    "is_checked": true
+  },
+  "262NQKLCiqHZgklrDd7z8e": {
+    "title": "夢色パレード",
+    "artist": "Rhodanthe*",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "1IDJy6HibwAg6Ciq9P1A8I": {
+    "title": "シアワセ☆ハイテンション↑↑",
+    "artist": "南春香(CV:佐藤利奈)",
+    "bpm": 170,
+    "is_checked": true
+  },
+  "5RdDQyhsOSUFih9JmJaZsT": {
+    "title": "キルミーのベイベー!",
+    "artist": "やすなとソーニャ(cv:赤﨑千夏・田村睦心)",
+    "bpm": 100,
+    "is_checked": true
+  },
+  "70mPhQjSLVbjPNJxix6r53": {
+    "title": "ふたりのきもちのほんとのひみつ",
+    "artist": "やすなとソーニャ(cv:赤﨑千夏・田村睦心)",
+    "bpm": 132,
+    "is_checked": true
+  },
+  "1DursrmThh0XvhSmAhow6U": {
+    "title": "Coloring palettes トモカネいろ",
+    "artist": "友兼(トモカネ)",
+    "bpm": 165,
+    "is_checked": true
+  },
+  "6vQsQ7ULyCpitOxV1d5MIQ": {
+    "title": "Coloring palettes ノダミキいろ",
+    "artist": "野田ミキ(ノダミキ)",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "0obkZfLmq1dUcwVggEjeh1": {
+    "title": "Coloring palettes キョージュいろ",
+    "artist": "大道雅(キョージュ)",
+    "bpm": 125,
+    "is_checked": true
+  },
+  "3umzqCS8NAs1OMrW3N23Qt": {
+    "title": "Coloring palettes ナミコいろ",
+    "artist": "野崎奈三子(ナミコ)",
+    "bpm": 165,
+    "is_checked": true
+  },
+  "0YDDXNK5rIIUfyV9Iil6Xi": {
+    "title": "go to Romance>>>>>",
+    "artist": "Luce Twinkle Wink☆",
+    "bpm": 113,
+    "is_checked": true
+  },
+  "7B6z9FIMABuD4AkPSiNvCJ": {
+    "title": "風の声を聴きながら",
+    "artist": "三月のパンタシア",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "3STT00LiEdYr0DZ8fBctZE": {
+    "title": "もってけ!セーラーふく (OP)",
+    "artist": "Aya",
+    "bpm": 150,
+    "is_checked": true
+  },
+  "1SE9FJkdwdxxpac49RqmGG": {
+    "title": "みんなだいすきのうた",
+    "artist": "赤座あかり(CV:三上枝織)",
+    "bpm": 140,
+    "is_checked": true
+  },
+  "3zzAUpJ0PCCj7ueAHuNtN1": {
+    "title": "よんでミラクるん!",
+    "artist": "魔女っ娘ミラクるん(CV:竹達彩奈)",
+    "bpm": 180,
+    "is_checked": true
+  },
+  "5lysHUotMaTGn1OhJSn3Pf": {
+    "title": "寝・逃・げでリセット! (「柊つかさ」キャラクターソング)",
+    "artist": "野水伊織",
+    "bpm": 128,
+    "is_checked": true
+  },
+  "0yDT2KngrfJ3ZRnFpSV2i4": {
+    "title": "プレシャス・フレンズ!",
+    "artist": "わたてん☆5",
+    "bpm": 142,
+    "is_checked": true
   }
 }
