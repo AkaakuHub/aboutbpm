@@ -144,6 +144,16 @@ function App() {
               Made with <a href="https://nico.kubosho.com/" target="_blank">Nico</a>
             </Container>
           </div>
+          <div>
+            <Container style={{
+              width: "100%",
+              textAlign: "center",
+            }}
+              className="mt-4 mb-4"
+            >
+              <a href="https://github.com/AkaakuHub" target="_blank">Akaaku</a>&apos;s product
+            </Container>
+          </div>
         </>
       )}
     </>
