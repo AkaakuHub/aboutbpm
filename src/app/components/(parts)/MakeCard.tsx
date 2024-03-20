@@ -37,14 +37,19 @@ interface CardProps {
   isKeyShown: boolean;
 }
 
-const convertKeyFromNumberToText = (key: number) => {
+const convertKeyFromNumberToText = (key: number, mode: number) => {
   // 音楽のkeyは0~11の数字で表されるので、それを文字に変換する
   if (key === -1) {
     return "-";
   }
-  //   const dict = ["C/Am", "D♭/B♭m", "D/Bm", "E♭/Cm", "E/D♭m", "F/D♭", "G♭/E♭m", "G/Em", "A♭/F♭", "A/G♭m", "B♭/Gm", "B/A♭m"];
-  const dict = ["C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "E/Dbm", "F/Db", "Gb/Ebm", "G/Em", "Ab/Fb", "A/Gbm", "Bb/Gm", "B/Abm"];
-  return dict[key];
+  //   const dict = ["C/Am", "D♭/B♭m", "D/Bm", "E♭/Cm", "E/D♭m", "F/Dm", "G♭/E♭m", "G/Em", "A♭/F♭", "A/G♭m", "B♭/Gm", "B/A♭m"];
+  // const dict = ["C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "E/Dbm", "F/Dm", "Gb/Ebm", "G/Em", "Ab/Fb", "A/Gbm", "Bb/Gm", "B/Abm"];
+  const dict = [["Am", "C"], ["Bbm", "Db"], ["Bm", "D"], ["Cm", "Eb"], ["Dbm", "E"], ["Dm", "F"], ["Ebm", "Gb"], ["Em", "G"], ["Fb", "Ab"], ["Gbm", "A"], ["Gm", "Bb"], ["Abm", "B"]];
+  if (mode === -1) {
+    return dict[key][1] + "/" + dict[key][0];
+  } else {
+    return dict[key][mode];
+  }
 }
 
 const CardComponent: React.FC<CardProps> = (
@@ -77,7 +82,7 @@ const CardComponent: React.FC<CardProps> = (
           </span>
           {isKeyShown && (
             <span className="col-3 d-flex justify-content-center">
-              {convertKeyFromNumberToText(songData.key)}
+              {convertKeyFromNumberToText(songData.key, songData.mode)}
             </span>
           )}
           <span className={isKeyShown ? "col-5" : "col-7"}>

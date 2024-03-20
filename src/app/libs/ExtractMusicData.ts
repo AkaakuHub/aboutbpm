@@ -6,6 +6,7 @@ import { SongData } from '../types';
     "artist": "hoge1",
     "bpm": 120.5,
     "key": 2,
+    "mode": 1,
     "is_checked": true,
   },
  */
@@ -23,6 +24,7 @@ const extractMusicData = (data: any, kind: string) => {
           artist: element.track.artists[0].name,
           bpm: -1,
           key: -1,
+          mode: -1,
           is_checked: false,
         }
       });

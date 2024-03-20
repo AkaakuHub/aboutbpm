@@ -3,6 +3,7 @@ export type SongData = {
   artist: string;
   bpm: number;
   key: number;
+  mode: number;
   is_checked: boolean;
 }
 
