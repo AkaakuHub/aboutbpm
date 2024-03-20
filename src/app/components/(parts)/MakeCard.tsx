@@ -13,7 +13,7 @@ import { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import { Button, Tooltip, OverlayTrigger } from 'react-bootstrap';
 
-import { SongData, FilterOptions, SearchResult } from '../../types';
+import { SongData, FilterOptions, SearchResultObject, SearchResult } from '../../types';
 
 import { CheckCircle } from 'react-bootstrap-icons';
 import { Envelope } from 'react-bootstrap-icons';
@@ -33,10 +33,26 @@ const renderTooltip = (props: any, element: SongData) => (
 );
 
 interface CardProps {
-  element: { id: string, songData: SongData }
+  element: SearchResultObject;
+  isKeyShown: boolean;
 }
 
-const CardComponent: React.FC<CardProps> = ({ element }) => {
+const convertKeyFromNumberToText = (key: number) => {
+  // 音楽のkeyは0~11の数字で表されるので、それを文字に変換する
+  if (key === -1) {
+    return "-";
+  }
+  //   const dict = ["C/Am", "D♭/B♭m", "D/Bm", "E♭/Cm", "E/D♭m", "F/D♭", "G♭/E♭m", "G/Em", "A♭/F♭", "A/G♭m", "B♭/Gm", "B/A♭m"];
+  const dict = ["C/Am", "Db/Bbm", "D/Bm", "Eb/Cm", "E/Dbm", "F/Db", "Gb/Ebm", "G/Em", "Ab/Fb", "A/Gbm", "Bb/Gm", "B/Abm"];
+  return dict[key];
+}
+
+const CardComponent: React.FC<CardProps> = (
+  {
+    element,
+    isKeyShown
+  }
+) => {
   const [isHover, setIsHover] = useState(false);
   const id = element.id
   const songData = element.songData;
@@ -50,47 +66,86 @@ const CardComponent: React.FC<CardProps> = ({ element }) => {
         style={{ padding: "0.4rem" }}
       >
         <Card.Text style={{
-          display: 'flex', justifyContent: 'space-between', textAlign: 'center', alignItems: 'center'
+          display: "flex",
+          justifyContent: "flex-start",
+          textAlign: "center",
+          alignItems: "center"
         }}>
-          <span className='col-1.5'>{songData.bpm}</span>
-          <span className='col-0.5'>
-            {songData.is_checked ? <CheckCircle color='green'
-            /> : <span> 　</span>}
+          <span className="col-1.5">{songData.bpm}</span>
+          <span className={isKeyShown ? "col-1" : "col-2"}>
+            {songData.is_checked ? <CheckCircle color="green" /> : <span> 　</span>}
           </span>
-          <span className='col-7'
-          >
-            <span className='row'>
-              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
+          {isKeyShown && (
+            <span className="col-3 d-flex justify-content-center">
+              {convertKeyFromNumberToText(songData.key)}
+            </span>
+          )}
+          <span className={isKeyShown ? "col-5" : "col-7"}>
+            <span className="row">
+              <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}>
                 {songData.title}
               </span>
             </span>
-            <span className='row'>
-              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
+            <span className="row">
+              <span style={{ whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", width: "100%" }}>
                 {songData.artist}
               </span>
             </span>
           </span>
-          {
-            isHover ? (
-              <span className='col-2'
-                onClick={() => ContactMessageOnClick(songData.title, songData.artist, songData.bpm, songData.is_checked)}
-                style={{ cursor: 'pointer' }}
+          {isHover ? (
+            <span className="col-2"
+              onClick={() => ContactMessageOnClick(songData.title, songData.artist, songData.bpm, songData.is_checked)}
+              style={{ cursor: "pointer" }}
+            >
+              <OverlayTrigger
+                placement="left"
+                delay={{ show: 0, hide: 5000 }}
+                overlay={(props: any) => renderTooltip(props, songData)}
               >
-                <OverlayTrigger
-                  placement="left"
-                  delay={{ show: 0, hide: 5000 }}
-                  overlay={(props: any) => renderTooltip(props, songData)}
-                >
-                  <Envelope size={22}
-                  />
-                </OverlayTrigger>
-              </span>
-            ) : <span className='col-2'></span>
-          }
+                <Envelope size={22} />
+              </OverlayTrigger>
+            </span>
+          ) : <span className="col-2"></span>}
         </Card.Text>
       </Card.Body>
     </Card>
   );
+};
+
+const sortData = (data: SearchResult, option: FilterOptions) => {
+  const sortByKey = option.sortOption === "key";
+  const sortByTitle = option.sortOptionInSameBPM === "title";
+  const sortByUnique = option.sortOptionInSameBPM === "unique";
+  const isAscending = option.order === "asc";
+
+  const sortIncluded = (a: SearchResultObject, b: SearchResultObject) => {
+    if (sortByKey) {
+      if (a.songData.key === b.songData.key) {
+        if (sortByTitle) {
+          return a.songData.title.localeCompare(b.songData.title);
+        } else if (sortByUnique) {
+          return a.songData.bpm - b.songData.bpm;
+        }
+      }
+      return isAscending ? a.songData.key - b.songData.key : b.songData.key - a.songData.key;
+    } else {
+      if (a.songData.bpm === b.songData.bpm) {
+        if (sortByTitle) {
+          return a.songData.title.localeCompare(b.songData.title);
+        } else if (sortByUnique) {
+          return isAscending ? a.songData.key - b.songData.key : b.songData.key - a.songData.key;
+        }
+      }
+      return isAscending ? a.songData.bpm - b.songData.bpm : b.songData.bpm - a.songData.bpm;
+    }
+  };
+
+  const sortNotIncluded = (a: SearchResultObject, b: SearchResultObject) => sortIncluded(a, b);
+
+  return {
+    included: data.included.sort(sortIncluded),
+    notIncluded: data.notIncluded.sort(sortNotIncluded),
+  };
 };
 
 const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeight: number }) => {
@@ -104,16 +159,18 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
     )
   }
 
+  const isKeyShown: boolean = option.isKeyShown;
+
   // bpmRangeStart以上、bpmRangeEnd以下のものを抽出
-  // data = data.filter((element: { id: string, songData: SongData }) => {
+  // data = data.filter((element: SearchResultObject) => {
   //   return option.bpmRangeStart <= element.songData.bpm && element.songData.bpm <= option.bpmRangeEnd;
   // });
   data = {
-    included: data.included.filter((element: { id: string, songData: SongData }) => {
+    included: data.included.filter((element: SearchResultObject) => {
       return option.bpmRangeStart <= element.songData.bpm && element.songData.bpm <= option.bpmRangeEnd;
     }),
     notIncluded: data.notIncluded
-    // notIncluded: data.notIncluded.filter((element: { id: string, songData: SongData }) => {
+    // notIncluded: data.notIncluded.filter((element: SearchResultObject) => {
     //   return option.bpmRangeStart <= element.songData.bpm && element.songData.bpm <= option.bpmRangeEnd;
     // })
     // bpmはつねに-1だからsortしようがない !!
@@ -124,93 +181,281 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
   option.muteWords = option.muteWords.map((word: string) => word.trim());
   // ""を除外
   option.muteWords = option.muteWords.filter((word: string) => word !== "");
-  // data = data.filter((element: { id: string, songData: SongData }) => {
+  // data = data.filter((element: SearchResultObject) => {
   //   return !option.muteWords.some((word: string) => {
   //     return element.songData.title.includes(word) || element.songData.artist.includes(word);
   //   });
   // });
   data = {
-    included: data.included.filter((element: { id: string, songData: SongData }) => {
+    included: data.included.filter((element: SearchResultObject) => {
       return !option.muteWords.some((word: string) => {
         return element.songData.title.includes(word) || element.songData.artist.includes(word);
       });
     }),
-    notIncluded: data.notIncluded.filter((element: { id: string, songData: SongData }) => {
+    notIncluded: data.notIncluded.filter((element: SearchResultObject) => {
       return !option.muteWords.some((word: string) => {
         return element.songData.title.includes(word) || element.songData.artist.includes(word);
       });
     })
   }
 
-  if (option.isSortByTitleInBPM) {
-    // 曲名ソートもわすれずに同時にbpmごとに行って
-    if (option.order === "asc") {
-      data = {
-        included: data.included.sort((a, b) => {
-          if (a.songData.bpm === b.songData.bpm) {
-            if (a.songData.title < b.songData.title) {
-              return -1;
-            }
-            if (a.songData.title > b.songData.title) {
-              return 1;
-            }
-            return 0;
-          }
-          return a.songData.bpm - b.songData.bpm;
-        }),
-        notIncluded: data.notIncluded.sort((a, b) => {
-          if (a.songData.bpm === b.songData.bpm) {
-            if (a.songData.title < b.songData.title) {
-              return -1;
-            }
-            if (a.songData.title > b.songData.title) {
-              return 1;
-            }
-            return 0;
-          }
-          return a.songData.bpm - b.songData.bpm;
-        })
-      }
-    } else if (option.order === "desc") {
-      data = {
-        included: data.included.sort((a, b) => {
-          if (a.songData.bpm === b.songData.bpm) {
-            if (a.songData.title < b.songData.title) {
-              return -1;
-            }
-            if (a.songData.title > b.songData.title) {
-              return 1;
-            }
-            return 0;
-          }
-          return b.songData.bpm - a.songData.bpm;
-        }),
-        notIncluded: data.notIncluded.sort((a, b) => {
-          if (a.songData.bpm === b.songData.bpm) {
-            if (a.songData.title < b.songData.title) {
-              return -1;
-            }
-            if (a.songData.title > b.songData.title) {
-              return 1;
-            }
-            return 0;
-          }
-          return b.songData.bpm - a.songData.bpm;
-        })
-      }
-    }
-  } else {
-    // bpmの昇順または降順でソート, 曲名は関係ない
-    if (option.order === "asc") {
-      // data.sort((a, b) => a.songData.bpm - b.songData.bpm);
-      data.included.sort((a, b) => a.songData.bpm - b.songData.bpm);
-      data.notIncluded.sort((a, b) => a.songData.bpm - b.songData.bpm);
-    } else if (option.order === "desc") {
-      // data.sort((a, b) => b.songData.bpm - a.songData.bpm);
-      data.included.sort((a, b) => b.songData.bpm - a.songData.bpm);
-      data.notIncluded.sort((a, b) => b.songData.bpm - a.songData.bpm);
-    }
-  }
+  // if (option.sortOption === "key") {
+  //   if (option.sortOptionInSameBPM === "title") {
+  //     // 曲名ソートもわすれずに同時にbpmごとに行って
+  //     if (option.order === "asc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.key - b.songData.key;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.key - b.songData.key;
+  //         })
+  //       }
+  //     } else if (option.order === "desc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.key - a.songData.key;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.key - a.songData.key;
+  //         })
+  //       }
+  //     }
+  //   } else if (option.sortOptionInSameBPM === "unique") {
+  //     // 曲名ソートもわすれずに同時にbpmごとに行って
+  //     if (option.order === "asc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.bpm < b.songData.bpm) {
+  //               return -1;
+  //             }
+  //             if (a.songData.bpm > b.songData.bpm) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.key - b.songData.key;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.bpm < b.songData.bpm) {
+  //               return -1;
+  //             }
+  //             if (a.songData.bpm > b.songData.bpm) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.key - b.songData.key;
+  //         })
+  //       }
+  //     } else if (option.order === "desc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.bpm < b.songData.bpm) {
+  //               return -1;
+  //             }
+  //             if (a.songData.bpm > b.songData.bpm) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.key - a.songData.key;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.key === b.songData.key) {
+  //             if (a.songData.bpm < b.songData.bpm) {
+  //               return -1;
+  //             }
+  //             if (a.songData.bpm > b.songData.bpm) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.key - a.songData.key;
+  //         })
+  //       }
+  //     }
+  //   } else {
+  //     // bpmの昇順または降順でソート, 曲名は関係ない
+  //     if (option.order === "asc") {
+  //       // data.sort((a, b) => a.songData.key - b.songData.key);
+  //       data.included.sort((a, b) => a.songData.key - b.songData.key);
+  //       data.notIncluded.sort((a, b) => a.songData.key - b.songData.key);
+  //     } else if (option.order === "desc") {
+  //       // data.sort((a, b) => b.songData.key - a.songData.key);
+  //       data.included.sort((a, b) => b.songData.key - a.songData.key);
+  //       data.notIncluded.sort((a, b) => b.songData.key - a.songData.key);
+  //     }
+  //   }
+  // } else {
+  //   if (option.sortOptionInSameBPM === "title") {
+  //     // 曲名ソートもわすれずに同時にbpmごとに行って
+  //     if (option.order === "asc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.bpm - b.songData.bpm;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.bpm - b.songData.bpm;
+  //         })
+  //       }
+  //     } else if (option.order === "desc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.bpm - a.songData.bpm;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.title < b.songData.title) {
+  //               return -1;
+  //             }
+  //             if (a.songData.title > b.songData.title) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.bpm - a.songData.bpm;
+  //         })
+  //       }
+  //     }
+  //   } else if (option.sortOptionInSameBPM === "unique") {
+  //     // 曲名ソートもわすれずに同時にbpmごとに行って
+  //     if (option.order === "asc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.key < b.songData.key) {
+  //               return -1;
+  //             }
+  //             if (a.songData.key > b.songData.key) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.bpm - b.songData.bpm;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.key < b.songData.key) {
+  //               return -1;
+  //             }
+  //             if (a.songData.key > b.songData.key) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return a.songData.bpm - b.songData.bpm;
+  //         })
+  //       }
+  //     } else if (option.order === "desc") {
+  //       data = {
+  //         included: data.included.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.key < b.songData.key) {
+  //               return -1;
+  //             }
+  //             if (a.songData.key > b.songData.key) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.bpm - a.songData.bpm;
+  //         }),
+  //         notIncluded: data.notIncluded.sort((a, b) => {
+  //           if (a.songData.bpm === b.songData.bpm) {
+  //             if (a.songData.key < b.songData.key) {
+  //               return -1;
+  //             }
+  //             if (a.songData.key > b.songData.key) {
+  //               return 1;
+  //             }
+  //             return 0;
+  //           }
+  //           return b.songData.bpm - a.songData.bpm;
+  //         })
+  //       }
+  //     }
+  //   } else {
+  //     // bpmの昇順または降順でソート, 曲名は関係ない
+  //     if (option.order === "asc") {
+  //       // data.sort((a, b) => a.songData.bpm - b.songData.bpm);
+  //       data.included.sort((a, b) => a.songData.bpm - b.songData.bpm);
+  //       data.notIncluded.sort((a, b) => a.songData.bpm - b.songData.bpm);
+  //     } else if (option.order === "desc") {
+  //       // data.sort((a, b) => b.songData.bpm - a.songData.bpm);
+  //       data.included.sort((a, b) => b.songData.bpm - a.songData.bpm);
+  //       data.notIncluded.sort((a, b) => b.songData.bpm - a.songData.bpm);
+  //     }
+  //   }
+  // }
+
+  data = sortData(data, option);
 
   // option.isSpotifyPlaylistがtrueの場合、入ってる/ない2つに分ける
   if (data.notIncluded.length === 0) {
@@ -220,7 +465,8 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
       const element = data.included[index];
       return (
         <div style={style} key={option.order + option.bpmRangeStart + option.bpmRangeEnd + option.muteWords.join('') + index}>
-          <CardComponent key={element.id} element={element} />
+          <CardComponent key={element.id} element={element} isKeyShown={isKeyShown} />
+
         </div>
       );
     };
@@ -247,7 +493,7 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
       const element = data.included[index];
       return (
         <div style={style} key={option.order + option.bpmRangeStart + option.bpmRangeEnd + option.muteWords.join('') + index}>
-          <CardComponent key={element.id} element={element} />
+          <CardComponent key={element.id} element={element} isKeyShown={isKeyShown} />
         </div>
       );
     };
@@ -255,7 +501,8 @@ const MakeCard = (props: { data: SearchResult, option: FilterOptions, windowHeig
       const element = data.notIncluded[index];
       return (
         <div style={style} key={option.order + option.bpmRangeStart + option.bpmRangeEnd + option.muteWords.join('') + index}>
-          <CardComponent key={element.id} element={element} />
+          <CardComponent key={element.id} element={element} isKeyShown={isKeyShown} />
+
         </div>
       );
     };

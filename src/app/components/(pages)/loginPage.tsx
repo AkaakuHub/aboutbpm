@@ -14,8 +14,7 @@ import Container from 'react-bootstrap/Container';
 import { judgeStatus, fetch_searchMusicSimple, fetch_doClientCredentials } from '../../libs/APIhandler';
 
 import MakeCard from "@/app/components/(parts)/MakeCard";
-import MakeOptionsCard from "@/app/components/(parts)/MakeOptionsCard";
-import { SP } from "next/dist/shared/lib/utils";
+import { MakeOptionsCard, MakeSortHeaderCard } from "@/app/components/(parts)/MakeOptionsCard";
 
 const Page = () => {
   const [initialWindowHeight, setInitialWindowHeight] = useState<number>(0);
@@ -23,22 +22,28 @@ const Page = () => {
   const [searchResults, setSearchResults] = useState<SearchResult | null>(null);
   // const [makeCardResults, setMakeCardResults] = useState<ReactElement | null>(null);
 
+  const [isSearching, setIsSearching] = useState<boolean>(false);
+
   const [isOptionTabOpen, setIsOptionTabOpen] = useState<boolean>(false);
   const [sortOptions, setSortOptions] = useState<FilterOptions>({
     order: "desc",
     bpmRangeStart: 1,
     bpmRangeEnd: 300,
     muteWords: [],
-    isSortByTitleInBPM: false
+    isKeyShown: false,
+    sortOption: "bpm",
+    sortOptionInSameBPM: "none",
   });
   const [sortOptionsErrorMessage, setSortOptionsErrorMessage] = useState<string>("");
 
   const searchMusicSimpleAPI = async (query: string) => {
+    setIsSearching(true);
     const res = await fetch_searchMusicSimple(query);
     if (judgeStatus(res.status)) {
       const data = await res.json();
       setSearchResults(data);
     }
+    setIsSearching(false);
   };
 
   const doClientCredentialsAPI = async () => {
@@ -100,18 +105,20 @@ const Page = () => {
           />
         </Form>
         <br />
-        {searchResults ? (
+        <span className="col d-flex justify-content-center" style={{
+          opacity: isSearching ? 1 : 0,
+        }}
+        >
+          <Spinner animation="grow" role="status" variant="primary">
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+        </span>
+        <MakeSortHeaderCard sortOptions={sortOptions} setSortOptions={setSortOptions} />
+        {searchResults && (
           <div>
             <MakeCard data={searchResults} option={sortOptions} windowHeight={initialWindowHeight} />
           </div>
-        ) :
-          (
-            <span className="col d-flex justify-content-center">
-              <Spinner animation="grow" role="status" variant="primary">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </span>
-          )
+        )
         }
       </Container>
     </div >

@@ -24,6 +24,7 @@ export async function POST(req: NextRequest) {
 }
 
 const searchMusicSimple = async (query: string) => {
+  // console.log(query);
   // let resultData: SongData[] = [];
   let resultData: SearchResult = { included: [], notIncluded: [] };
   // if (/^\s*$/.test(query)) { // queryが空白のみの場合

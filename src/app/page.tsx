@@ -89,9 +89,11 @@ function App() {
           >
             <Container>
               <br />
-              注意：BPMは
+              注意：BPM, キーは
               {/*librosaで仮推定したのち、*/}
-              spotifyから取得しているため、2,3ほどずれていたり、2倍になっていたりすることがあります。そのため、BPMが間違っている場合は遠慮なくお問い合わせください。
+              spotifyから取得しているため、BPMが2,3ほどずれていたり、2倍になっていたりすることがあります。
+              また、キーはそこまで精度が高く無いと思います。
+              そのため、BPMやキーが間違っている場合は遠慮なくお問い合わせください。
               <br />
               <br />
               また、曲の追加のリクエストも受け付けています。お問い合わせフォームからお知らせください。
@@ -105,14 +107,13 @@ function App() {
               <br />
               <br />
               {/** ここにお知らせなど */}
-              {/**
-               *               {!isNotificationClosed && (
+              {!isNotificationClosed && (
                 <div className="alert alert-dismissible alert-info row align-items-center">
                   <span className='col-2'
                   ><strong>お知らせ</strong>
                   </span>
                   <span className='col'
-                  >現在、データベースとの照合を順次行い、BPMの精度を向上させています。もうしばらくお待ちください。
+                  >現在、データベースからキーの取得作業を行っています(API制限)。もうしばらくお待ちください。
                   </span>
                   <span className='col-0.3'
                   >
@@ -125,8 +126,6 @@ function App() {
                   </span>
                 </div>
               )}
-               * 
-               */}
               <br />
               {token ? (
                 <LoggedIn token={token} />

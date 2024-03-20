@@ -2,18 +2,26 @@ export type SongData = {
   title: string;
   artist: string;
   bpm: number;
+  key: number;
   is_checked: boolean;
 }
 
-export interface FilterOptions {
+export type FilterOptions = {
   order: string;
   bpmRangeStart: number;
   bpmRangeEnd: number;
   muteWords: string[];
-  isSortByTitleInBPM: boolean;
+  isKeyShown: boolean;
+  sortOption: "bpm" | "key";
+  sortOptionInSameBPM: "title" | "unique" | "none"
 }
 
-export interface SearchResult {
-  included: { id: string, songData: SongData }[],
-  notIncluded: { id: string, songData: SongData }[]
+export type SearchResultObject = {
+  id: string;
+  songData: SongData;
+}
+
+export type SearchResult = {
+  included: SearchResultObject[],
+  notIncluded: SearchResultObject[]
 }

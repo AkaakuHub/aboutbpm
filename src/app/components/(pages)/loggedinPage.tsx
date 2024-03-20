@@ -13,7 +13,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import { judgeStatus, fetch_searchMusicAdvanced, fetch_searchMusicByPlaylist } from '../../libs/APIhandler';
 
 import MakeCard from "@/app/components/(parts)/MakeCard";
-import MakeOptionsCard from "@/app/components/(parts)/MakeOptionsCard";
+import { MakeOptionsCard, MakeSortHeaderCard } from "@/app/components/(parts)/MakeOptionsCard";
 
 // tokenを受け取る
 const Page = (props: { token: string }) => {
@@ -30,7 +30,9 @@ const Page = (props: { token: string }) => {
     bpmRangeStart: 1,
     bpmRangeEnd: 300,
     muteWords: [],
-    isSortByTitleInBPM: false
+    sortOption: "bpm",
+    sortOptionInSameBPM: "none",
+    isKeyShown: false,
   });
   const [sortOptionsErrorMessage, setSortOptionsErrorMessage] = useState<string>("");
 
@@ -133,30 +135,21 @@ const Page = (props: { token: string }) => {
             </Button>
           </span>
         </div>
-        {isSearching && (
-          <>
-            <br />
-            <span className="col d-flex justify-content-center">
-              <Spinner animation="grow" role="status" variant="primary" >
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </span>
-          </>
-
-        )}
         <br />
-        {searchResults ? (
+        <span className="col d-flex justify-content-center" style={{
+          opacity: isSearching ? 1 : 0,
+        }}
+        >
+          <Spinner animation="grow" role="status" variant="primary">
+            <span className="sr-only">Loading...</span>
+          </Spinner>
+        </span>
+        <MakeSortHeaderCard sortOptions={sortOptions} setSortOptions={setSortOptions} />
+        {searchResults && (
           <div>
             <MakeCard data={searchResults} option={sortOptions} windowHeight={initialWindowHeight} />
           </div>
-        ) :
-          (
-            <span className="col d-flex justify-content-center">
-              <Spinner animation="grow" role="status" variant="primary">
-                <span className="sr-only">Loading...</span>
-              </Spinner>
-            </span>
-          )
+        )
         }
       </Container>
     </div>
