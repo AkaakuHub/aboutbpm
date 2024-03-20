@@ -55,6 +55,7 @@ const searchMusicByPlaylist = async (query: string, token: string) => {
         artist: element.track.artists[0].name,
         bpm: -1,
         key: -1,
+        mode: -1,
         is_checked: false
       };
       jsonDataLikeFromSpotify.push({ id: id, songData: songData });
