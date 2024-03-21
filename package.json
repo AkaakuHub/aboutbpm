@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.0",
     "audio-decode": "^2.2.0",
     "audiobuffer-to-wav": "^1.0.0",
     "axios": "^1.6.7",
     "bootstrap-honoka": "^4.4.0",
     "bootstrap-nico": "^4.3.2",
     "bootstrap-rin": "^3.3.7-2",
+    "lodash": "^4.17.21",
     "next": "14.1.0",
     "react": "^18",
     "react-bootstrap": "^2.10.1",

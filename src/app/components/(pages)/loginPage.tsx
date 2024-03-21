@@ -18,8 +18,9 @@ import { MakeOptionsCard, MakeSortHeaderCard } from "@/app/components/(parts)/Ma
 
 const Page = () => {
   const [initialWindowHeight, setInitialWindowHeight] = useState<number>(0);
-  // const [query, setQuery] = useState("");
+  const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult | null>(null);
+  const [initialSearchResults, setInitialSearchResults] = useState<SearchResult | null>(null);
   // const [makeCardResults, setMakeCardResults] = useState<ReactElement | null>(null);
 
   const [isSearching, setIsSearching] = useState<boolean>(false);
@@ -42,6 +43,9 @@ const Page = () => {
     if (judgeStatus(res.status)) {
       const data = await res.json();
       setSearchResults(data);
+      if (query === "" && initialSearchResults === null) {
+        setInitialSearchResults(data);
+      }
     }
     setIsSearching(false);
   };
@@ -67,8 +71,7 @@ const Page = () => {
 
   useEffect(() => {
     searchMusicSimpleAPI("");
-  }
-    , []);
+  }, []);
 
   useEffect(() => {
     setInitialWindowHeight(window.innerHeight);
@@ -76,6 +79,14 @@ const Page = () => {
       setInitialWindowHeight(window.innerHeight);
     });
   }, []);
+
+  const searchHandler = () => {
+    if (/^\s*$/.test(query)) {
+      setSearchResults(initialSearchResults);
+    } else {
+      searchMusicSimpleAPI(query);
+    }
+  }
 
   return (
     <div>
@@ -90,20 +101,36 @@ const Page = () => {
       <br />
       <br />
       <Container>
-        <Form>
-          <Form.Control type="text" placeholder="曲名またはアーティスト名を入力"
-            onChange={e => {
-              // setQuery(e.target.value);
-              searchMusicSimpleAPI(e.target.value);
-            }}
-            onKeyDown={e => {
-              if (e.key === 'Enter') {
-                e.preventDefault();
-              }
-            }
-            }
-          />
-        </Form>
+        <div className="row">
+          <div className="col">
+            <Form>
+              <Form.Control
+                type="text"
+                placeholder="曲名またはアーティスト名を入力"
+                onChange={(e) => {
+                  setQuery(e.target.value);
+                }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    e.preventDefault();
+                    searchHandler();
+                  }
+                }}
+              />
+            </Form>
+          </div>
+          <div className="col-auto">
+            <Button
+              variant="primary"
+              onClick={() => {
+                searchHandler();
+              }}
+              disabled={isSearching}
+            >
+              検索
+            </Button>
+          </div>
+        </div>
         <br />
         <span className="col d-flex justify-content-center" style={{
           opacity: isSearching ? 1 : 0,

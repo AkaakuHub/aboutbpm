@@ -77,6 +77,14 @@ const Page = (props: { token: string }) => {
     });
   }, []);
 
+  const searchHandler = () => {
+    if (/^\s*$/.test(query)) {
+      return;
+    } else {
+      searchMusicAdvancedAPI(query);
+    }
+  }
+
   return (
     <div>
       (おまけ機能)
@@ -102,10 +110,8 @@ const Page = (props: { token: string }) => {
       <br />
       <br />
       <Container>
-        <div className="row"
-        >
-          <span className="col"
-          >
+        <div className="row">
+          <div className="col">
             <Form>
               <Form.Control type="text" placeholder="語句またはSpotifyのプレイリストURLを入力"
                 onChange={e => {
@@ -115,25 +121,23 @@ const Page = (props: { token: string }) => {
                 onKeyDown={e => {
                   if (e.key === 'Enter') {
                     e.preventDefault();
-                    if (query !== "") {
-                      searchMusicAdvancedAPI(query);
-                    }
+                    searchHandler();
                   }
                 }
                 }
               />
             </Form>
-          </span>
-          <span className="col-2"
-          >
-            <Button variant="primary" onClick={() => {
-              searchMusicAdvancedAPI(query);
-            }
-            }
+          </div>
+          <div className="col-auto">
+            <Button variant="primary"
+              onClick={() => {
+                searchHandler();
+              }
+              }
               disabled={isSearching}
             >検索
             </Button>
-          </span>
+          </div>
         </div>
         <br />
         <span className="col d-flex justify-content-center" style={{
