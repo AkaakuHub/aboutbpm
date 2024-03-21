@@ -151,7 +151,7 @@ function App() {
             }}
               className="mt-4 mb-4"
             >
-              <a href="https://github.com/AkaakuHub" target="_blank">Akaaku</a>&apos;s product
+              <a href="https://twitter.com/akaakuhub" target="_blank">Akaaku</a>&apos;s product
             </Container>
           </div>
         </>
