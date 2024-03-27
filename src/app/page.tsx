@@ -10,6 +10,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import Modal from 'react-bootstrap/Modal';
+
 import { CheckCircle } from 'react-bootstrap-icons';
 import { Envelope } from 'react-bootstrap-icons';
 import { X } from "react-bootstrap-icons"
@@ -49,6 +51,10 @@ function App() {
   };
 
   const [isNotificationClosed, setIsNotificationClosed] = useState<boolean>(false);
+
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const handleOpen = () => setIsModalOpen(true);
+  const handleClose = () => setIsModalOpen(false);
 
   return (
     <>
@@ -92,7 +98,8 @@ function App() {
               注意：BPM, キーは
               {/*librosaで仮推定したのち、*/}
               spotifyから取得しているため、BPMが2,3ほどずれていたり、2倍になっていたりすることがあります。
-              また、キーはそこまで精度が高く無いと思います。
+              <br />
+              また、キーは全然合っていません。
               そのため、BPMやキーが間違っている場合は遠慮なくお問い合わせください。
               <br />
               <br />
@@ -107,7 +114,7 @@ function App() {
               <br />
               <br />
               {/** ここにお知らせなど */}
-              {!isNotificationClosed && (
+              {/* {!isNotificationClosed && (
                 <div className="alert alert-dismissible alert-info row align-items-center">
                   <span className='col-2'
                   ><strong>お知らせ</strong>
@@ -125,7 +132,7 @@ function App() {
                     </Button>
                   </span>
                 </div>
-              )}
+              )} */}
               <br />
               {token ? (
                 <LoggedIn token={token} />
@@ -142,18 +149,36 @@ function App() {
               className="mt-4 mb-4"
             >
               Made with <a href="https://nico.kubosho.com/" target="_blank">Nico</a>
-            </Container>
-          </div>
-          <div>
-            <Container style={{
-              width: "100%",
-              textAlign: "center",
-            }}
-              className="mt-4 mb-4"
-            >
+              <br />
+              <br />
+              <a href="#" onClick={handleOpen} style={{ cursor: "pointer" }}>プライバシーポリシー</a>
+              <br />
+              <br />
               <a href="https://twitter.com/akaakuhub" target="_blank">Akaaku</a>&apos;s product
             </Container>
           </div>
+          <Modal show={isModalOpen} onHide={handleClose} centered>
+            <Modal.Header>
+              <Modal.Title>プライバシーポリシー</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              本サイトでは、ユーザー体験の向上やサイトの最適化のため、Googleアナリティクスを使用しています。
+              <br />
+              Googleアナリティクスでは、Cookieを使用して、個人を特定できない形で匿名データを収集しています。
+              <br />
+              もしデータ収集を拒否したい場合は、お使いのブラウザの設定を変更してください。
+              <br />
+              <br />
+              詳しくは、
+              <a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank">Googleアナリティクス利用規約</a>
+              や
+              <a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Googleのポリシーと規約</a>
+              をご確認ください。
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>閉じる</Button>
+            </Modal.Footer>
+          </Modal>
         </>
       )}
     </>

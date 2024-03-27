@@ -5,10 +5,14 @@ import "./globals.css";
 // import "bootstrap-rin/dist/css/bootstrap.min.css";
 import "bootstrap-nico/dist/css/bootstrap.min.css";
 
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 const siteName: string = "だいたいBPM";
 const description: string = "主にアニソンのおおよそのBPMを掲載しています。";
 const url: string = process.env.NEXT_PUBLIC_BASE_URL || "";
 const googleSearchConsole: string = process.env.NEXT_PUBLIC_GOOGLE_SEARCH_CONSOLE || "";
+
+const googleAnalyticsId: string = process.env.NEXT_PUBLIC_GA_ID || "";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -61,16 +65,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <GoogleAnalytics gaId={googleAnalyticsId} />
+      </head>
       <body className="m-3"
         style={{
           backgroundColor: "##f1f7fc",
           opacity: 0.8,
           backgroundImage: "radial-gradient(##f1e8f7 0.5px, ###fff7fc 0.5px)",
           backgroundSize: "10px 10px",
-          // overflowY: "scroll",
-          // スクロールバーを常に表示
-          // スクロールバーを常に非表示
-          // scrollbarWidth: "none",
         }}
       >
         {children}</body>
